@@ -36,6 +36,18 @@
     });
   });
 
+  // Gallery "show all" toggle
+  var gallery = document.getElementById("gallery");
+  var galleryToggle = document.getElementById("galleryToggle");
+  if (gallery && galleryToggle) {
+    var extraCount = gallery.querySelectorAll(".gallery__item--extra").length;
+    galleryToggle.addEventListener("click", function () {
+      var open = gallery.classList.toggle("is-open");
+      galleryToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      galleryToggle.textContent = open ? "Show fewer photos" : "Show all photos";
+    });
+  }
+
   // Scroll reveal
   if ("IntersectionObserver" in window) {
     var targets = document.querySelectorAll(".section");
