@@ -4,21 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moldován Csaba — Product Builder &amp; Entrepreneur | Moldován Csaba Kft</title>
-  <meta name="description" content="Moldován Csaba Zoltán — entrepreneur, product builder and fractional product leader in Budapest. Founder of Moldován Csaba Kft. I make your product done: Discover, Discuss, Define, Design, Develop, Deliver, Data, Drive." />
-  <meta name="author" content="Moldován Csaba Zoltán" />
+  <meta name="description" content="Csaba Zoltán Moldován — entrepreneur, CXO and product builder in Budapest. Founder of Moldován Csaba Kft. Done is better than perfect — I make your product done. 5.0★ on Google (22 reviews)." />
+  <meta name="author" content="Csaba Zoltán Moldován" />
   <meta name="theme-color" content="#0b0d12" />
   <link rel="canonical" href="https://moldovancsaba.com/" />
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Moldován Csaba — Product Builder &amp; Entrepreneur" />
-  <meta property="og:description" content="I make your product done. Entrepreneur and product builder based in Budapest. Founder of Moldován Csaba Kft." />
+  <meta property="og:description" content="Done is better than perfect. Entrepreneur, CXO and product builder based in Budapest. Founder of Moldován Csaba Kft." />
   <meta property="og:url" content="https://moldovancsaba.com/" />
+  <meta property="og:image" content="https://moldovancsaba.com/assets/portrait.jpg" />
   <meta property="og:site_name" content="Moldován Csaba Kft" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@moldovan" />
   <meta name="twitter:title" content="Moldován Csaba — Product Builder &amp; Entrepreneur" />
-  <meta name="twitter:description" content="I make your product done. Entrepreneur and product builder based in Budapest." />
+  <meta name="twitter:description" content="Done is better than perfect. Entrepreneur and product builder based in Budapest." />
+  <meta name="twitter:image" content="https://moldovancsaba.com/assets/portrait.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,19 +28,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 
-  <!-- Structured data: Person + Organization -->
+  <!-- Structured data: Person + Organization + AggregateRating -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Person",
-        "name": "Moldován Csaba Zoltán",
-        "alternateName": "Csaba Zoltan Moldovan",
+        "name": "Csaba Zoltán Moldován",
+        "alternateName": "Moldován Csaba Zoltán",
+        "image": "https://moldovancsaba.com/assets/portrait.jpg",
         "url": "https://moldovancsaba.com",
-        "jobTitle": "Entrepreneur & Product Builder",
+        "jobTitle": "CXO & Founder, Entrepreneur, Product Builder",
         "worksFor": { "@type": "Organization", "name": "Moldován Csaba Kft" },
         "address": { "@type": "PostalAddress", "addressLocality": "Budapest", "addressCountry": "HU" },
+        "alumniOf": "Eötvös Loránd University",
         "sameAs": [
           "https://github.com/moldovancsaba",
           "https://www.linkedin.com/in/csabamoldovan/",
@@ -51,9 +55,16 @@
         "name": "Moldován Csaba Kft",
         "alternateName": "Moldovan Csaba Ltd",
         "url": "https://moldovancsaba.com",
-        "slogan": "Make your product done.",
+        "logo": "https://moldovancsaba.com/assets/favicon.svg",
+        "slogan": "Done is better than perfect.",
         "address": { "@type": "PostalAddress", "addressLocality": "Budapest", "addressCountry": "HU" },
-        "founder": { "@type": "Person", "name": "Moldován Csaba Zoltán" },
+        "founder": { "@type": "Person", "name": "Csaba Zoltán Moldován" },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "22",
+          "bestRating": "5"
+        },
         "sameAs": [ "https://hu.linkedin.com/company/moldovancsaba" ]
       }
     ]
@@ -72,8 +83,10 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#method">Method</a>
+        <a href="#experience">Experience</a>
+        <a href="#speaking">Speaking</a>
         <a href="#work">Work</a>
-        <a href="#company">Company</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav__actions">
@@ -87,22 +100,30 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero__inner">
-        <p class="hero__eyebrow">Entrepreneur · Product Builder · Budapest</p>
-        <h1 class="hero__title">I make your<br /><span class="grad">product done.</span></h1>
-        <p class="hero__lead">
-          I'm <strong>Moldován Csaba Zoltán</strong> — founder of <strong>Moldován Csaba Kft</strong>.
-          I turn ideas into shipped products: from the first discovery workshop to a live, data-driven
-          platform. Two decades of product leadership, a builder's hands, and a bias for shipping.
-        </p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#work">See the work</a>
-          <a class="btn btn--ghost" href="#contact">Start a project</a>
+        <div class="hero__text">
+          <p class="hero__eyebrow">CXO &amp; Founder · Entrepreneur · Budapest</p>
+          <h1 class="hero__title">Done is better<br /><span class="grad">than perfect.</span></h1>
+          <p class="hero__lead">
+            I'm <strong>Csaba Zoltán Moldován</strong> — founder of <strong>Moldován Csaba Kft</strong>.
+            I turn ideas into shipped products and help founders make their product <em>done</em>:
+            from discovery to a live, data-driven platform. Product leader, builder, and venture partner.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#work">See the work</a>
+            <a class="btn btn--ghost" href="#contact">Start a project</a>
+          </div>
+          <ul class="hero__stats">
+            <li><span class="stat__num">5.0★</span><span class="stat__label">Google rating · 22 reviews</span></li>
+            <li><span class="stat__num">€5M+</span><span class="stat__label">Raised for early-stage startups</span></li>
+            <li><span class="stat__num">30+</span><span class="stat__label">Products built &amp; in progress</span></li>
+            <li><span class="stat__num">4.3k</span><span class="stat__label">LinkedIn followers</span></li>
+          </ul>
         </div>
-        <ul class="hero__stats">
-          <li><span class="stat__num">30+</span><span class="stat__label">Products shipped &amp; in build</span></li>
-          <li><span class="stat__num">8D</span><span class="stat__label">Discovery-to-Drive method</span></li>
-          <li><span class="stat__num">20y</span><span class="stat__label">Product &amp; venture experience</span></li>
-        </ul>
+        <figure class="hero__portrait">
+          <img src="assets/portrait.jpg" width="600" height="600"
+               alt="Portrait of Csaba Zoltán Moldován" />
+          <figcaption>Csaba Zoltán Moldován</figcaption>
+        </figure>
       </div>
       <div class="hero__glow" aria-hidden="true"></div>
     </section>
@@ -112,40 +133,44 @@
       <div class="container grid-2">
         <div>
           <p class="kicker">About</p>
-          <h2 class="section__title">Part founder, part product owner, part engineer.</h2>
+          <h2 class="section__title">Part founder, part product owner, part builder.</h2>
           <p class="prose">
-            I help companies move from "great idea" to "live product." I've spent my career at the
-            intersection of <strong>product management, agile delivery and entrepreneurship</strong> —
-            running discovery, defining scope, shaping design, and staying hands-on through development,
-            launch and the data that follows.
+            For over a decade I've worked at the intersection of <strong>product, agile delivery and
+            entrepreneurship</strong> — running discovery, defining scope, shaping design, and staying
+            hands-on through development, launch and the data that follows. As CXO &amp; founder of
+            Moldován Csaba Kft, I've helped raise <strong>over €5M</strong> for early-stage startups and
+            supported countless strategic pivots.
           </p>
           <p class="prose">
-            I co-founded <strong>amanoba.com</strong>, a distance-learning platform, and serve as a
-            <strong>venture partner</strong> supporting founders and pivots. Today I build a portfolio
-            of products under the <strong>DoneIsBetter</strong> banner — from AI assistants and SSO
-            infrastructure to sports analytics and learning platforms.
+            I co-founded the <strong>amanoba</strong> education initiative, served as a
+            <strong>venture partner at Hiventures</strong>, and today build a portfolio of products under
+            the <strong>narimato / DoneIsBetter</strong> banner — from AI assistants and SSO infrastructure
+            to sports analytics and learning platforms.
           </p>
           <ul class="tags">
-            <li>Product Strategy</li>
+            <li>Product Development</li>
+            <li>Business Development</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Leadership</li>
             <li>Scrum &amp; Agile</li>
-            <li>Fractional Product Owner</li>
-            <li>0→1 Builds</li>
-            <li>AI Products</li>
             <li>Venture Partner</li>
           </ul>
         </div>
         <aside class="card profile-card">
           <div class="profile-card__head">
-            <div class="avatar" aria-hidden="true">MC</div>
+            <img class="avatar-img" src="assets/portrait.jpg" width="64" height="64"
+                 alt="Csaba Zoltán Moldován" />
             <div>
-              <h3>Moldován Csaba Zoltán</h3>
-              <p class="muted">Founder, Moldován Csaba Kft</p>
+              <h3>Csaba Zoltán Moldován</h3>
+              <p class="muted">Done is better than perfect</p>
             </div>
           </div>
           <dl class="facts">
+            <div><dt>Role</dt><dd>CXO &amp; Founder</dd></div>
+            <div><dt>Company</dt><dd>Moldován Csaba Kft</dd></div>
             <div><dt>Based in</dt><dd>Budapest, Hungary</dd></div>
-            <div><dt>Focus</dt><dd>Product building &amp; venture</dd></div>
-            <div><dt>Motto</dt><dd>"Make your product done."</dd></div>
+            <div><dt>Network</dt><dd>4,361 followers</dd></div>
             <div><dt>Brands</dt><dd>narimato · DoneIsBetter</dd></div>
           </dl>
           <div class="profile-card__links">
@@ -179,6 +204,90 @@
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="kicker">Experience</p>
+        <h2 class="section__title">A track record of building &amp; backing.</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">2016 — Present</span>
+              <h3>CXO &amp; Founder</h3>
+              <p class="timeline__org">Moldován Csaba Kft</p>
+              <p>Make your product done by turning ideas into benefits for clients. Helped raise over €5M into early-stage startups, delivered innovative products bridging requirements and development, and supported strategic pivots so businesses thrive in dynamic markets.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">2021 — 2024</span>
+              <h3>Corporate Strategy Specialist</h3>
+              <p class="timeline__org">Seyu — “Together for victory!”</p>
+              <p>Business management and startup development across the fan-engagement platform.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">2019 — 2023</span>
+              <h3>Venture Partner</h3>
+              <p class="timeline__org">Hiventures — for Hungarian innovative startups</p>
+              <p>Empowering startups for success — digital strategy, market research and hands-on support for founders.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">2020 — 2021</span>
+              <h3>Co-Founder (Charity)</h3>
+              <p class="timeline__org">amanoba</p>
+              <p>Transforming education during challenging times — agile coaching and digital strategy for distance learning.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <span class="timeline__date">Earlier</span>
+              <h3>Head of Future Lab · Product &amp; Project Leadership</h3>
+              <p class="timeline__org">Profession.hu · ImpressTV &amp; more</p>
+              <p>Two decades leading product development and project management — building holistic, system-level products and high-performing agile teams.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section id="speaking" class="section section--alt">
+      <div class="container">
+        <p class="kicker">On Stage</p>
+        <h2 class="section__title">Speaking &amp; thought leadership.</h2>
+        <p class="section__intro">
+          A regular voice at Hungarian business events — from Business Fest and HRFEST to AI-in-HR
+          boardrooms — on product, entrepreneurship and putting AI to work.
+        </p>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide">
+            <img src="assets/stage-1.jpg" loading="lazy" width="1200" height="800"
+                 alt="Csaba Moldován speaking on stage at Business Fest" />
+            <figcaption>Business Fest — panel as founder of Moldován Csaba Kft</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/stage-2.jpg" loading="lazy" width="1200" height="798"
+                 alt="Csaba Moldován presenting an AI workshop" />
+            <figcaption>AI-readiness &amp; automation workshop</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/stage-3.jpg" loading="lazy" width="1200" height="799"
+                 alt="Csaba Moldován on a panel discussion" />
+            <figcaption>Panel discussion · AI in HR</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- WORK -->
     <section id="work" class="section">
       <div class="container">
@@ -198,7 +307,7 @@
         <div class="cards" id="projectGrid">
           <article class="card project" data-cat="platform">
             <header class="project__head"><h3>amanoba</h3><span class="badge">Learning</span></header>
-            <p>Gamified learning platform — courses delivered by email and in-app, with quizzes, achievements, a 50-level XP system and leaderboards. Powers the "AI 30 Nap" program.</p>
+            <p>Gamified learning platform — courses delivered by email and in-app, with quizzes, achievements, a 50-level XP system and leaderboards. Powers the “AI 30 Nap” program.</p>
             <p class="project__tech">Next.js · TypeScript · MongoDB · Mantine · Stripe</p>
             <a class="project__link" href="https://github.com/moldovancsaba/amanoba" target="_blank" rel="noopener">View on GitHub ↗</a>
           </article>
@@ -212,7 +321,7 @@
 
           <article class="card project" data-cat="ai">
             <header class="project__head"><h3>hatori</h3><span class="badge">AI</span></header>
-            <p>Local-first personal AI assistant. Private, auditable, and learns from real usage via a RAG pipeline. "Everything started here."</p>
+            <p>Local-first personal AI assistant. Private, auditable, and learns from real usage via a RAG pipeline. “Everything started here.”</p>
             <p class="project__tech">Python · FastAPI · PostgreSQL + pgvector · MLX · Ollama</p>
             <a class="project__link" href="https://github.com/moldovancsaba/hatori" target="_blank" rel="noopener">View on GitHub ↗</a>
           </article>
@@ -247,30 +356,120 @@
 
           <article class="card project" data-cat="platform">
             <header class="project__head"><h3>misisimi</h3><span class="badge">Platform</span></header>
-            <p>"CMS for the rest" — a lightweight content management system built for non-enterprise teams who still want to ship fast.</p>
+            <p>“CMS for the rest” — a lightweight content management system built for non-enterprise teams who still want to ship fast.</p>
             <p class="project__tech">TypeScript · Next.js</p>
             <a class="project__link" href="https://github.com/moldovancsaba/misisimi" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-
-          <article class="card project" data-cat="platform">
-            <header class="project__head"><h3>budapest-night</h3><span class="badge">Platform</span></header>
-            <p>A city guide to events, parties, restaurants, cafés &amp; culture across Budapest's nightlife.</p>
-            <p class="project__tech">JavaScript</p>
-            <a class="project__link" href="https://github.com/moldovancsaba/budapest-night" target="_blank" rel="noopener">View on GitHub ↗</a>
           </article>
         </div>
 
         <p class="work__more">
           Plus <strong>step</strong>, <strong>habigoal.com</strong>, <strong>launchmass</strong>,
-          <strong>blockmass</strong>, <strong>kidex</strong>, <strong>compare</strong>,
-          <strong>calendar-agent</strong> and more —
+          <strong>blockmass</strong>, <strong>kidex</strong>, <strong>budapest-night</strong> and more —
           <a href="https://github.com/moldovancsaba?tab=repositories" target="_blank" rel="noopener">browse all 30+ repositories ↗</a>
         </p>
+
+        <div class="collabs">
+          <p class="collabs__label">Proud collaborations</p>
+          <ul class="collabs__list">
+            <li>INSTABUY <span>Real-estate eCommerce</span></li>
+            <li>MATIMATO <span>AI-driven gaming</span></li>
+            <li>ORIANA <span>Low-code automation</span></li>
+            <li>POPHONE <span>Premium tech marketplace</span></li>
+            <li>STEP <span>Blockchain solutions</span></li>
+            <li>I AM INTERN <span>Interns &amp; opportunities</span></li>
+            <li>SWAPTHECAP <span>Fashion marketplace</span></li>
+            <li>MUMI <span>Job-market innovation</span></li>
+            <li>ARE <span>AR experiences</span></li>
+            <li>GODZIE <span>Interactive foosball</span></li>
+            <li>HAIKOTO <span>Light &amp; video experience</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section section--alt">
+      <div class="container">
+        <p class="kicker">Reviews &amp; Recommendations</p>
+        <h2 class="section__title">What clients &amp; partners say.</h2>
+
+        <div class="rating">
+          <div class="rating__score">5.0</div>
+          <div>
+            <div class="rating__stars" aria-hidden="true">★★★★★</div>
+            <p class="rating__meta">22 reviews on Google · Moldovan Csaba Ltd</p>
+          </div>
+          <a class="btn btn--ghost rating__cta" href="https://www.google.com/search?q=Moldovan+Csaba+Ltd+reviews" target="_blank" rel="noopener">See on Google ↗</a>
+        </div>
+
+        <div class="reviews">
+          <!-- Google reviews -->
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Csaba is an open-minded, cheerful business professional who always seeks new opportunities and innovations that could make the world a better place. His fast, to-the-point thinking helps others grow with rapid speed. A highly recommended business partner!</blockquote>
+            <figcaption><span class="review__who">Krisztián Kasz</span><span class="review__src">Google review</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>The best thing that ever happened to our company is that Csaba supports us with all his expertise and precious knowledge in the field of business. A true professional with a great personality.</blockquote>
+            <figcaption><span class="review__who">Talk at Ease</span><span class="review__src">Google review</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Csaba's thorough professional training, accurate and individual solutions, and his wide-ranging knowledge and network of contacts are a huge support for our project.</blockquote>
+            <figcaption><span class="review__who">Nemes Gyula</span><span class="review__src">Google review</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Csaba's tireless help and professional support ensured the success of our product launch.</blockquote>
+            <figcaption><span class="review__who">Gergő Prémecz</span><span class="review__src">Google review</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>The lucky ones who get to Csaba feel, from the very first meeting, that they've “come home.” Rare and tremendous.</blockquote>
+            <figcaption><span class="review__who">Róbert Szabó</span><span class="review__src">Google review</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Flexible. Prepared. A professional with vast experience who can always bring another perspective into the conversation — and a great help in developing our business.</blockquote>
+            <figcaption><span class="review__who">Tamás Varjú &amp; Roland Biro</span><span class="review__src">Google reviews</span></figcaption>
+          </figure>
+
+          <!-- LinkedIn recommendations -->
+          <figure class="card review">
+            <div class="review__stars" aria-hidden="true">in</div>
+            <blockquote>A truly creative person with an agile mindset — capable of looking at things from a very different angle and turning ideas into concepts fast by setting up and managing agile teams.</blockquote>
+            <figcaption><span class="review__who">István Péter Martis</span><span class="review__src">CEO · M&amp;A · LinkedIn recommendation</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-hidden="true">in</div>
+            <blockquote>An absolute pleasure to work with. A seasoned project manager with international experience, Csaba truly embodies the mantra “Done is better than perfect,” consistently driving projects to successful completion with focus and energy.</blockquote>
+            <figcaption><span class="review__who">Adél Máté</span><span class="review__src">LinkedIn recommendation</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-hidden="true">in</div>
+            <blockquote>Csaba showed excellent communication skills and consistently exceeded our expectations. Charismatic and well-spoken — qualities that serve him well in supporting partner companies.</blockquote>
+            <figcaption><span class="review__who">Krisztina Balla</span><span class="review__src">Client · LinkedIn recommendation</span></figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="review__stars" aria-hidden="true">in</div>
+            <blockquote>A very talented, broad-minded guy whose biggest strength is the ability to see things in a holistic, system view. Nothing goes past him — one of the very best project managers.</blockquote>
+            <figcaption><span class="review__who">Ferenc Mihála</span><span class="review__src">LinkedIn recommendation</span></figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- COMPANY -->
-    <section id="company" class="section section--alt">
+    <section id="company" class="section">
       <div class="container grid-2">
         <div>
           <p class="kicker">The Company</p>
@@ -281,10 +480,20 @@
             craft into a growing portfolio of platforms.
           </p>
           <p class="prose">
-            Whether you need a fractional product owner to steady a roadmap, a hands-on builder to take a
+            Whether you need a fractional product leader to steady a roadmap, a hands-on builder to take a
             concept to launch, or a partner to help you pivot — the goal is the same:
             <strong>make your product done.</strong>
           </p>
+          <ul class="tags">
+            <li>Change Management</li>
+            <li>Project Management</li>
+            <li>Management Consulting</li>
+            <li>UX Research &amp; Design</li>
+            <li>Negotiation</li>
+            <li>Pricing Strategy</li>
+            <li>Public Speaking</li>
+            <li>Non-profit Consulting</li>
+          </ul>
         </div>
         <div class="services">
           <div class="card service">
@@ -303,6 +512,32 @@
             <h3>Venture Partnership</h3>
             <p>Hands-on support for founders and pivots — strategy, product and execution.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section id="credentials" class="section section--alt">
+      <div class="container grid-2">
+        <div>
+          <p class="kicker">Education</p>
+          <h2 class="section__title">Foundations.</h2>
+          <ul class="creds">
+            <li><strong>Eötvös Loránd University</strong><span>Mathematics · 1994–1998</span></li>
+            <li><strong>Kodolányi János University</strong><span>BA, Communication · 2000–2003</span></li>
+            <li><strong>University of Alberta — School of Business</strong><span>Industrial &amp; Product Design · 2015–2017</span></li>
+            <li><strong>Nanyang Technological University, Singapore</strong><span>Art &amp; Art Studies · 2014–2015</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="kicker">Licenses &amp; Certifications</p>
+          <h2 class="section__title">Always learning.</h2>
+          <ul class="creds">
+            <li><strong>Leadership in a Time of Crisis</strong><span>Stanford University Graduate School of Business · 2020</span></li>
+            <li><strong>Google Digital Workshop — Online Marketing</strong><span>IAB · 2017</span></li>
+            <li><strong>Agile Planning for Software Products</strong><span>Coursera · 2016</span></li>
+            <li><strong>Software Processes &amp; Agile Practices</strong><span>Coursera · 2016</span></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -333,7 +568,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p>© <span id="year"></span> Moldován Csaba Kft · Budapest, Hungary</p>
-      <p class="muted">Make your product done.</p>
+      <p class="muted">Done is better than perfect.</p>
     </div>
   </footer>
 
