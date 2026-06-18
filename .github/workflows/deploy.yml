@@ -26,12 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # One-time setup required: in the repo, go to
+      # Settings → Pages → Build and deployment → Source → "GitHub Actions".
+      # The default GITHUB_TOKEN cannot enable Pages programmatically.
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Auto-enable GitHub Pages (using the Actions source) on first run,
-          # so no manual Settings → Pages step is required.
-          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
