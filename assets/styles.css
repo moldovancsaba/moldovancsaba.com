@@ -335,6 +335,43 @@ a:hover { text-decoration: underline; }
 .gallery.is-open .gallery__item--extra { display: block; }
 .gallery__more { text-align: center; margin-top: 26px; }
 
+/* ---------- Full Timeline ---------- */
+.ftl { list-style: none; margin: 0; padding: 0; position: relative; }
+.ftl::before {
+  content: ""; position: absolute; left: 176px; top: 8px; bottom: 8px;
+  width: 2px; background: linear-gradient(var(--brand), var(--brand-2)); opacity: 0.25;
+}
+.ftl__item { position: relative; padding: 0 0 44px 200px; }
+.ftl__item:last-child { padding-bottom: 0; }
+.ftl__aside { position: absolute; left: 0; top: 0; width: 152px; text-align: right; padding-top: 3px; }
+.ftl__date { display: block; font-size: 0.8rem; font-weight: 700; color: var(--brand-2); letter-spacing: 0.03em; margin-bottom: 6px; }
+.ftl__type { display: inline-block; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); color: var(--muted); }
+.ftl__item--corporate .ftl__type { color: var(--brand); background: color-mix(in srgb, var(--brand) 10%, transparent); border-color: color-mix(in srgb, var(--brand) 35%, transparent); }
+.ftl__item--speaking .ftl__type { color: var(--brand-2); background: color-mix(in srgb, var(--brand-2) 10%, transparent); border-color: color-mix(in srgb, var(--brand-2) 35%, transparent); }
+.ftl__item--personal .ftl__type { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+.ftl__item--award .ftl__type { color: #ffc861; background: color-mix(in srgb, #ffc861 12%, transparent); border-color: color-mix(in srgb, #ffc861 40%, transparent); }
+.ftl__dot { position: absolute; left: 168px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: var(--brand); border: 3px solid var(--bg-alt); box-shadow: 0 0 0 1px var(--border); z-index: 1; }
+.ftl__item--speaking .ftl__dot { background: var(--brand-2); }
+.ftl__item--personal .ftl__dot { background: var(--accent); }
+.ftl__item--award .ftl__dot { background: #ffc861; }
+.ftl__item--review .ftl__dot { background: var(--surface-2); }
+.ftl__body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+.ftl__org { margin: 0 0 8px; color: var(--text); font-weight: 500; font-size: 0.92rem; }
+.ftl__body > p { margin: 0 0 8px; color: var(--muted); max-width: 640px; }
+.ftl__body > p:last-child { margin-bottom: 0; }
+.ftl__photo { margin: 14px 0 0; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border); max-width: 480px; }
+.ftl__photo img { width: 100%; display: block; max-height: 300px; object-fit: cover; }
+.ftl__photo figcaption { padding: 9px 14px; font-size: 0.82rem; color: var(--muted); background: var(--surface); }
+.ftl__quote { margin: 0; max-width: 560px; background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--brand-2); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; }
+.ftl__stars { color: #ffc861; font-size: 0.95rem; letter-spacing: 2px; margin: 0 0 10px; font-style: normal; }
+.ftl__quote blockquote { margin: 0 0 12px; font-style: italic; color: var(--text); font-size: 0.95rem; line-height: 1.65; }
+.ftl__quote footer { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+.ftl__quote footer span { font-weight: 400; color: var(--muted); margin-left: 4px; }
+.ftl__item--extra { display: none; }
+.ftl.is-open .ftl__item--extra { display: block; }
+.ftl__more { text-align: center; margin: 40px 0 0; }
+.ftl__gallery-title { font-family: "Sora", sans-serif; font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 700; margin: 0 0 32px; letter-spacing: -0.02em; }
+
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--border); padding: 30px 0; }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
@@ -361,6 +398,12 @@ a:hover { text-decoration: underline; }
   .reviews { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .nav__links { display: none; }
+}
+@media (max-width: 640px) {
+  .ftl::before { left: 7px; }
+  .ftl__item { padding: 0 0 36px 32px; }
+  .ftl__aside { position: static; width: auto; text-align: left; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .ftl__dot { left: 0; }
 }
 @media (max-width: 600px) {
   .section { padding: 60px 0; }

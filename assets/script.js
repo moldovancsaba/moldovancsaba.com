@@ -36,6 +36,17 @@
     });
   });
 
+  // Timeline "show full" toggle
+  var ftl = document.getElementById("fullTimeline");
+  var timelineToggle = document.getElementById("timelineToggle");
+  if (ftl && timelineToggle) {
+    timelineToggle.addEventListener("click", function () {
+      var open = ftl.classList.toggle("is-open");
+      timelineToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      timelineToggle.textContent = open ? "Show less" : "Show full timeline";
+    });
+  }
+
   // Gallery "show all" toggle
   var gallery = document.getElementById("gallery");
   var galleryToggle = document.getElementById("galleryToggle");
