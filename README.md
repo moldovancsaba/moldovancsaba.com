@@ -54,3 +54,7 @@ This repo deploys automatically via GitHub Actions. To enable it once:
 ---
 
 © Moldován Csaba Kft · Budapest, Hungary
+
+## License
+
+MIT. See [LICENSE](LICENSE).
