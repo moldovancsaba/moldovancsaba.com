@@ -220,7 +220,7 @@ font-size: 1.125rem; line-height: 1; cursor: pointer; transition: background 0.2
 .hero__award { display: flex; align-items: baseline; gap: 10px; margin-top: 28px; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
 .hero__award-mark { color: var(--gold); font-size: 0.95rem; }
 .hero__portrait { position: relative; justify-self: end; width: 100%; }
-.hero__portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); background: var(--paper-2); }
+.hero__portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: 50% 0%; border-radius: var(--radius); background: var(--paper-2); }
 .hero__portrait figcaption { margin-top: 12px; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); text-align: right; }
 .stamp { position: absolute; left: -46px; bottom: 20px; width: clamp(96px, 11vw, 128px); height: auto; rotate: -12deg; }
 .stamp__disc { fill: var(--accent); }
@@ -250,7 +250,7 @@ font-size: 1.125rem; line-height: 1; cursor: pointer; transition: background 0.2
 .stages__list { display: flex; flex-wrap: wrap; gap: 6px 28px; font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
 .profile { position: sticky; top: calc(var(--nav-h) + 24px); }
 .profile__head { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
-.profile__avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.profile__avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 0%; }
 .profile__name { font-size: 1.1875rem; letter-spacing: -0.01em; }
 .profile__motto { margin-top: 4px; font-size: 0.875rem; color: var(--ink-2); }
 .facts > div { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid var(--line); font-size: 0.9375rem; }
