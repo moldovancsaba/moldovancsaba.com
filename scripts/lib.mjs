@@ -14,6 +14,7 @@ export function loadContent() {
     site: readJson("content/site.json"),
     projects: readJson("content/projects.json"),
     timeline: readJson("content/timeline.json"),
+    map: readJson("content/map.json"),
     gallery: readJson("content/gallery.json"),
     reviews: readJson("content/reviews.json"),
   };

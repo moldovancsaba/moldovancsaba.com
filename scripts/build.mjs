@@ -28,10 +28,11 @@ const content = loadContent();
 // Everything is self-hosted except the web fonts; the one inline script is allowed by hash.
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'sha256-${sha(THEME_SCRIPT, "base64")}'`,
-  "style-src 'self' https://fonts.googleapis.com",
+  `script-src 'self' https://unpkg.com 'sha256-${sha(THEME_SCRIPT, "base64")}'`,
+  "style-src 'self' https://fonts.googleapis.com https://unpkg.com",
+  "style-src-attr 'unsafe-inline'",
   "font-src https://fonts.gstatic.com",
-  "img-src 'self' data:",
+  "img-src 'self' data: https://*.tile.openstreetmap.org",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'none'",

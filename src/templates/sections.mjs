@@ -173,6 +173,31 @@ export function timeline(ctx, index) {
     </section>`;
 }
 
+export function worldMap(ctx, index) {
+  const { map } = ctx;
+  const categories = map.categories;
+  const list = categories.map((category) => `<li><span class="map__swatch map__swatch--${category.id}" aria-hidden="true"></span>${esc(category.label)}</li>`).join("");
+  const locations = categories.map((category) => `<li><strong>${esc(category.label)}:</strong> ${map.places.filter((place) => place.categories.includes(category.id)).map((place) => esc(place.alsoKnownAs ? `${place.city} (${place.alsoKnownAs})` : place.city)).join(" · ")}</li>`).join("");
+  return `<section id="map" class="section section--band" aria-labelledby="map-title">
+      <div class="container">
+        ${head({ index, id: "map", ...map })}
+        <div class="map__toolbar">
+          <div class="map__filters" role="group" aria-label="Filter map pins">
+            <button type="button" class="chip" data-map-filter="all" aria-pressed="true">All places</button>
+            ${each(categories, (category) => `<button type="button" class="chip" data-map-filter="${category.id}" aria-pressed="false">${esc(category.label)}</button>`)}
+          </div>
+          <button type="button" class="btn map__reset" data-map-reset>Reset map</button>
+        </div>
+        <div class="map__frame">
+          <div id="world-map" class="map__canvas" role="region" aria-label="Map of places where Csaba built television channels and studios, worked with startups, and gave presentations" data-places="${esc(JSON.stringify(map.places))}"></div>
+          <p class="map__fallback">The interactive map needs JavaScript. Places are listed below.</p>
+        </div>
+        <ul class="map__legend" aria-label="Map pin categories">${list}</ul>
+        <ul class="map__places" aria-label="Places by category">${locations}</ul>
+      </div>
+    </section>`;
+}
+
 export function galleryGrid(ctx, index) {
   const { gallery } = ctx;
   const total = gallery.photos.length;

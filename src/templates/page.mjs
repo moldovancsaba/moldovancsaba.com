@@ -84,7 +84,9 @@ ${structuredData(ctx)}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="${esc(FONTS)}" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="${base}${assets.css}" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
   <script src="${base}${assets.js}" defer></script>
   ${social}
 </head>`;
@@ -138,7 +140,7 @@ ${head}
 export function renderHome(ctx) {
   const { meta } = ctx.site;
   // Numbered sections, in page order.
-  const numbered = [s.about, s.method, s.work, s.timeline, s.galleryGrid, s.reviews, s.studio, s.credentials, s.contact];
+  const numbered = [s.about, s.method, s.work, s.timeline, s.worldMap, s.galleryGrid, s.reviews, s.studio, s.credentials, s.contact];
   const body = `${siteHeader(ctx, "#top")}
 
   <main id="main">

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Nw3AJMSP8yh2CaOBNx6Ww0EOUjWx2QDsvf1nSIrziqs='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com 'sha256-Nw3AJMSP8yh2CaOBNx6Ww0EOUjWx2QDsvf1nSIrziqs='; style-src 'self' https://fonts.googleapis.com https://unpkg.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <title>Moldován Csaba — Product Builder &amp; Entrepreneur | Moldován Csaba Kft</title>
   <meta name="description" content="Csaba Zoltán Moldován — entrepreneur, CXO and product builder in Budapest. Founder of Moldován Csaba Kft. Done is better than perfect — I make your product done. 5.0★ on Google (22 reviews)." />
   <meta name="author" content="Csaba Zoltán Moldován" />
@@ -15,8 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Inter:wght@400..600&amp;display=swap" />
-  <link rel="stylesheet" href="assets/site.css?v=efc6ec63ca" />
-  <script src="assets/site.js?v=168d0d2d6c" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="assets/site.css?v=6749f5e3bc" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="assets/site.js?v=87eb420fea" defer></script>
   <link rel="canonical" href="https://moldovancsaba.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Moldován Csaba — Product Builder &amp; Entrepreneur" />
@@ -104,6 +106,7 @@
 <li><a href="#method">Method</a></li>
 <li><a href="#work">Work</a></li>
 <li><a href="#timeline">Timeline</a></li>
+<li><a href="#map">Map</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
         </ul>
@@ -690,10 +693,35 @@
       </div>
     </section>
 
+    <section id="map" class="section section--band" aria-labelledby="map-title">
+      <div class="container">
+        <header class="section__head">
+        <p class="kicker"><span class="kicker__n">05</span>Around the world</p>
+        <h2 class="section__title" id="map-title">Where the work took me.</h2>
+        <p class="section__intro">From television studios to startup teams and stages around the world — these are the places behind the work.</p>
+      </header>
+        <div class="map__toolbar">
+          <div class="map__filters" role="group" aria-label="Filter map pins">
+            <button type="button" class="chip" data-map-filter="all" aria-pressed="true">All places</button>
+            <button type="button" class="chip" data-map-filter="tv" aria-pressed="false">TV channels &amp; studios</button>
+<button type="button" class="chip" data-map-filter="startup" aria-pressed="false">Startup work</button>
+<button type="button" class="chip" data-map-filter="talk" aria-pressed="false">Presentations</button>
+          </div>
+          <button type="button" class="btn map__reset" data-map-reset>Reset map</button>
+        </div>
+        <div class="map__frame">
+          <div id="world-map" class="map__canvas" role="region" aria-label="Map of places where Csaba built television channels and studios, worked with startups, and gave presentations" data-places="[{&quot;city&quot;:&quot;Beirut&quot;,&quot;country&quot;:&quot;Lebanon&quot;,&quot;lat&quot;:33.8938,&quot;lon&quot;:35.5018,&quot;categories&quot;:[&quot;tv&quot;]},{&quot;city&quot;:&quot;Moscow&quot;,&quot;country&quot;:&quot;Russia&quot;,&quot;lat&quot;:55.7558,&quot;lon&quot;:37.6173,&quot;categories&quot;:[&quot;tv&quot;,&quot;startup&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Yalta&quot;,&quot;country&quot;:&quot;Ukraine&quot;,&quot;lat&quot;:44.4952,&quot;lon&quot;:34.1663,&quot;categories&quot;:[&quot;tv&quot;]},{&quot;city&quot;:&quot;Kyiv&quot;,&quot;country&quot;:&quot;Ukraine&quot;,&quot;lat&quot;:50.4501,&quot;lon&quot;:30.5234,&quot;categories&quot;:[&quot;tv&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Budapest&quot;,&quot;country&quot;:&quot;Hungary&quot;,&quot;lat&quot;:47.4979,&quot;lon&quot;:19.0402,&quot;categories&quot;:[&quot;tv&quot;,&quot;startup&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;London&quot;,&quot;country&quot;:&quot;United Kingdom&quot;,&quot;lat&quot;:51.5072,&quot;lon&quot;:-0.1276,&quot;categories&quot;:[&quot;tv&quot;,&quot;startup&quot;]},{&quot;city&quot;:&quot;Paris&quot;,&quot;country&quot;:&quot;France&quot;,&quot;lat&quot;:48.8566,&quot;lon&quot;:2.3522,&quot;categories&quot;:[&quot;tv&quot;]},{&quot;city&quot;:&quot;Hong Kong&quot;,&quot;country&quot;:&quot;China&quot;,&quot;lat&quot;:22.3193,&quot;lon&quot;:114.1694,&quot;categories&quot;:[&quot;tv&quot;]},{&quot;city&quot;:&quot;Shanghai&quot;,&quot;country&quot;:&quot;China&quot;,&quot;lat&quot;:31.2304,&quot;lon&quot;:121.4737,&quot;categories&quot;:[&quot;tv&quot;]},{&quot;city&quot;:&quot;Hyderabad&quot;,&quot;country&quot;:&quot;India&quot;,&quot;lat&quot;:17.385,&quot;lon&quot;:78.4867,&quot;categories&quot;:[&quot;tv&quot;,&quot;startup&quot;]},{&quot;city&quot;:&quot;Dubai&quot;,&quot;country&quot;:&quot;United Arab Emirates&quot;,&quot;lat&quot;:25.2048,&quot;lon&quot;:55.2708,&quot;categories&quot;:[&quot;tv&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Tel Aviv&quot;,&quot;country&quot;:&quot;Israel&quot;,&quot;lat&quot;:32.0853,&quot;lon&quot;:34.7818,&quot;categories&quot;:[&quot;startup&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Jerusalem&quot;,&quot;country&quot;:&quot;Israel&quot;,&quot;lat&quot;:31.7683,&quot;lon&quot;:35.2137,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Mumbai&quot;,&quot;country&quot;:&quot;India&quot;,&quot;lat&quot;:19.076,&quot;lon&quot;:72.8777,&quot;categories&quot;:[&quot;startup&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Bengaluru&quot;,&quot;alsoKnownAs&quot;:&quot;Bangalore&quot;,&quot;country&quot;:&quot;India&quot;,&quot;lat&quot;:12.9716,&quot;lon&quot;:77.5946,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Thiruvananthapuram&quot;,&quot;alsoKnownAs&quot;:&quot;Trivandrum&quot;,&quot;country&quot;:&quot;India&quot;,&quot;lat&quot;:8.5241,&quot;lon&quot;:76.9366,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Kolkata&quot;,&quot;alsoKnownAs&quot;:&quot;Calcutta&quot;,&quot;country&quot;:&quot;India&quot;,&quot;lat&quot;:22.5726,&quot;lon&quot;:88.3639,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Miskolc&quot;,&quot;country&quot;:&quot;Hungary&quot;,&quot;lat&quot;:48.1035,&quot;lon&quot;:20.7784,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Győr&quot;,&quot;country&quot;:&quot;Hungary&quot;,&quot;lat&quot;:47.6875,&quot;lon&quot;:17.6504,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Cairo&quot;,&quot;country&quot;:&quot;Egypt&quot;,&quot;lat&quot;:30.0444,&quot;lon&quot;:31.2357,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Brussels&quot;,&quot;country&quot;:&quot;Belgium&quot;,&quot;lat&quot;:50.8503,&quot;lon&quot;:4.3517,&quot;categories&quot;:[&quot;startup&quot;,&quot;talk&quot;]},{&quot;city&quot;:&quot;Amsterdam&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;lat&quot;:52.3676,&quot;lon&quot;:4.9041,&quot;categories&quot;:[&quot;startup&quot;]},{&quot;city&quot;:&quot;Kharkiv&quot;,&quot;country&quot;:&quot;Ukraine&quot;,&quot;lat&quot;:49.9935,&quot;lon&quot;:36.2304,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Marrakesh&quot;,&quot;country&quot;:&quot;Morocco&quot;,&quot;lat&quot;:31.6295,&quot;lon&quot;:-7.9811,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Taipei&quot;,&quot;country&quot;:&quot;Taiwan&quot;,&quot;lat&quot;:25.033,&quot;lon&quot;:121.5654,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Casablanca&quot;,&quot;country&quot;:&quot;Morocco&quot;,&quot;lat&quot;:33.5731,&quot;lon&quot;:-7.5898,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Riyadh&quot;,&quot;country&quot;:&quot;Saudi Arabia&quot;,&quot;lat&quot;:24.7136,&quot;lon&quot;:46.6753,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Seoul&quot;,&quot;country&quot;:&quot;South Korea&quot;,&quot;lat&quot;:37.5665,&quot;lon&quot;:126.978,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Berlin&quot;,&quot;country&quot;:&quot;Germany&quot;,&quot;lat&quot;:52.52,&quot;lon&quot;:13.405,&quot;categories&quot;:[&quot;talk&quot;]},{&quot;city&quot;:&quot;Prague&quot;,&quot;country&quot;:&quot;Czechia&quot;,&quot;lat&quot;:50.0755,&quot;lon&quot;:14.4378,&quot;categories&quot;:[&quot;talk&quot;]}]"></div>
+          <p class="map__fallback">The interactive map needs JavaScript. Places are listed below.</p>
+        </div>
+        <ul class="map__legend" aria-label="Map pin categories"><li><span class="map__swatch map__swatch--tv" aria-hidden="true"></span>TV channels &amp; studios</li><li><span class="map__swatch map__swatch--startup" aria-hidden="true"></span>Startup work</li><li><span class="map__swatch map__swatch--talk" aria-hidden="true"></span>Presentations</li></ul>
+        <ul class="map__places" aria-label="Places by category"><li><strong>TV channels &amp; studios:</strong> Beirut · Moscow · Yalta · Kyiv · Budapest · London · Paris · Hong Kong · Shanghai · Hyderabad · Dubai</li><li><strong>Startup work:</strong> Moscow · Budapest · London · Hyderabad · Tel Aviv · Jerusalem · Mumbai · Bengaluru (Bangalore) · Thiruvananthapuram (Trivandrum) · Kolkata (Calcutta) · Miskolc · Győr · Cairo · Brussels · Amsterdam</li><li><strong>Presentations:</strong> Moscow · Kyiv · Budapest · Dubai · Tel Aviv · Mumbai · Brussels · Kharkiv · Marrakesh · Taipei · Casablanca · Riyadh · Seoul · Berlin · Prague</li></ul>
+      </div>
+    </section>
+
     <section id="gallery" class="section" aria-labelledby="gallery-title">
       <div class="container">
         <header class="section__head">
-        <p class="kicker"><span class="kicker__n">05</span>Visual Archive</p>
+        <p class="kicker"><span class="kicker__n">06</span>Visual Archive</p>
         <h2 class="section__title" id="gallery-title">On stages, on panels, on camera.</h2>
         <p class="section__intro">A look back through the years, with portraits from 1991 to 2026 and basketball memories from Nagytétény SE and the Kelenföld Vandals.</p>
       </header>
@@ -994,7 +1022,7 @@
     <section id="reviews" class="section section--band" aria-labelledby="reviews-title">
       <div class="container">
         <header class="section__head">
-        <p class="kicker"><span class="kicker__n">06</span>Reviews &amp; Recommendations</p>
+        <p class="kicker"><span class="kicker__n">07</span>Reviews &amp; Recommendations</p>
         <h2 class="section__title" id="reviews-title">What clients &amp; partners say.</h2>
         
       </header>
@@ -1064,7 +1092,7 @@
     <section id="company" class="section" aria-labelledby="company-title">
       <div class="container">
         <header class="section__head">
-        <p class="kicker"><span class="kicker__n">07</span>The Company</p>
+        <p class="kicker"><span class="kicker__n">08</span>The Company</p>
         <h2 class="section__title" id="company-title">Moldován Csaba Kft</h2>
         
       </header>
@@ -1087,7 +1115,7 @@
     <section id="credentials" class="section section--band" aria-labelledby="credentials-title">
       <div class="container">
         <header class="section__head">
-          <p class="kicker"><span class="kicker__n">08</span>Credentials</p>
+          <p class="kicker"><span class="kicker__n">09</span>Credentials</p>
           <div class="award">
             <span class="award__mark" aria-hidden="true">★</span>
             <div>
@@ -1126,7 +1154,7 @@
     <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="container">
         <header class="section__head">
-        <p class="kicker"><span class="kicker__n">09</span>Contact</p>
+        <p class="kicker"><span class="kicker__n">10</span>Contact</p>
         <h2 class="section__title" id="contact-title">Let's make it done.</h2>
         <p class="section__intro">Have a product to build, a team to steer, or a pivot to navigate? I'd love to hear about it.</p>
       </header>

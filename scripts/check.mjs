@@ -4,7 +4,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { at, loadContent, referencedImages } from "./lib.mjs";
 
-const ALLOWED_HOSTS = new Set(["fonts.googleapis.com", "fonts.gstatic.com"]);
+const ALLOWED_HOSTS = new Set(["fonts.googleapis.com", "fonts.gstatic.com", "unpkg.com"]);
 const problems = [];
 const fail = (page, message) => problems.push(`${page}: ${message}`);
 

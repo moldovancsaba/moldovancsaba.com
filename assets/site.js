@@ -73,6 +73,66 @@
     });
   }
 
+  /* ---------- Places map ---------- */
+  const mapElement = $("#world-map");
+  if (mapElement && window.L) {
+    const places = JSON.parse(mapElement.dataset.places);
+    const categories = [
+      { id: "tv", label: "TV channels & studios" },
+      { id: "startup", label: "Startup work" },
+      { id: "talk", label: "Presentations" },
+    ];
+    const map = L.map(mapElement, { scrollWheelZoom: false, worldCopyJump: true }).setView([28, 14], 2);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+      maxZoom: 19,
+    }).addTo(map);
+    const pins = L.layerGroup().addTo(map);
+    const filterButtons = $$('[data-map-filter]');
+    const resetButton = $(`[data-map-reset]`);
+    const pinIcon = (place) => L.divIcon({
+      className: `map-pin map-pin--${place.categories.join(" map-pin--")}`,
+      iconSize: [18, 18],
+      iconAnchor: [9, 9],
+      popupAnchor: [0, -10],
+      html: "<span aria-hidden=\"true\"></span>",
+    });
+    const draw = (filter = "all", fit = true) => {
+      pins.clearLayers();
+      const visible = places.filter((place) => filter === "all" || place.categories.includes(filter));
+      for (const place of visible) {
+        const names = place.categories.map((id) => categories.find((category) => category.id === id).label);
+        const marker = L.marker([place.lat, place.lon], { icon: pinIcon(place), title: `${place.city}, ${place.country}: ${names.join(", ")}` });
+        const popup = document.createElement("div");
+        popup.className = "map-popup";
+        const title = document.createElement("strong");
+        title.textContent = place.city;
+        const country = document.createElement("span");
+        country.textContent = place.country;
+        const kinds = document.createElement("span");
+        kinds.textContent = names.join(" · ");
+        popup.append(title, country, kinds);
+        marker.bindPopup(popup).addTo(pins);
+      }
+      if (fit && visible.length) {
+        const bounds = L.latLngBounds(visible.map((place) => [place.lat, place.lon]));
+        map.fitBounds(bounds, { padding: [28, 28], maxZoom: 4 });
+      }
+    };
+    draw();
+    mapElement.nextElementSibling?.classList.add("is-hidden");
+    for (const button of filterButtons) {
+      button.addEventListener("click", () => {
+        for (const item of filterButtons) item.setAttribute("aria-pressed", String(item === button));
+        draw(button.dataset.mapFilter);
+      });
+    }
+    resetButton?.addEventListener("click", () => {
+      for (const item of filterButtons) item.setAttribute("aria-pressed", String(item.dataset.mapFilter === "all"));
+      draw("all");
+    });
+  }
+
   /* ---------- Current section in the navigation ---------- */
   const navLinks = new Map($$('.nav__links a[href^="#"]').map((a) => [a.getAttribute("href").slice(1), a]));
   if (navLinks.size && "IntersectionObserver" in window) {
