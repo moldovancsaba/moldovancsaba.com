@@ -12,11 +12,19 @@
   ],
   "items": [
     {
+      "date": "2026",
+      "type": "speaking",
+      "title": "Sharing ideas on stage",
+      "text": "Alongside building products, I speak with people shaping business and technology.",
+      "photo": "csaba-2026-speaker"
+    },
+    {
       "date": "2024 — Present",
       "type": "career",
       "title": "Building the DoneIsBetter portfolio",
       "org": "Moldován Csaba Kft — narimato · hatori · amanoba · messmass · sso · spot · reply",
-      "text": "Shipping a compounding stack of interconnected platforms — AI assistants, sports analytics, SSO infrastructure, learning tools and content platforms — all open on GitHub and growing."
+      "text": "Shipping a compounding stack of interconnected platforms — AI assistants, sports analytics, SSO infrastructure, learning tools and content platforms — all open on GitHub and growing.",
+      "photo": "csaba-2026-red"
     },
     {
       "date": "2023",
@@ -142,10 +150,31 @@
       "text": "Following a stroke, left the media industry and shifted focus to supporting early-stage businesses and making seed investments."
     },
     {
-      "date": "Early 2000s",
+      "date": "2006",
       "type": "career",
-      "title": "Interactive television across nearly 70 countries",
-      "text": "Helped bring premium-rate television quiz shows to more than 200 channels and established over 40 studios across multiple countries.",
+      "title": "Building studios around the world",
+      "text": "My television work spanned more than 40 studios in countries from Hungary and Lebanon to China.",
+      "photo": "csaba-2006"
+    },
+    {
+      "date": "2004",
+      "type": "career",
+      "title": "Taking interactive television global",
+      "text": "Premium-rate quiz shows reached more than 200 TV channels in nearly 70 countries.",
+      "photo": "csaba-2004"
+    },
+    {
+      "date": "2002",
+      "type": "career",
+      "title": "Live television, powered by viewers",
+      "text": "Interactive call-in games let viewers take part in live television quiz shows from home.",
+      "photo": "csaba-2002"
+    },
+    {
+      "date": "2000",
+      "type": "career",
+      "title": "Interactive television takes off",
+      "text": "I helped bring premium-rate call-in quiz shows to more than 200 channels in nearly 70 countries.",
       "photo": "csaba-2000-tv"
     },
     {

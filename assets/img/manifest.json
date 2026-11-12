@@ -33,14 +33,6 @@
       562
     ]
   },
-  "csaba-2000": {
-    "width": 941,
-    "height": 1672,
-    "widths": [
-      480,
-      562
-    ]
-  },
   "csaba-2000-tv": {
     "width": 941,
     "height": 1672,
@@ -74,6 +66,14 @@
     ]
   },
   "csaba-2026-red": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2026-speaker": {
     "width": 941,
     "height": 1672,
     "widths": [
