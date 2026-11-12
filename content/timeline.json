@@ -12,13 +12,6 @@
   ],
   "items": [
     {
-      "date": "2026",
-      "type": "personal",
-      "title": "Portrait · 2026",
-      "text": "A portrait from 2026.",
-      "photo": "csaba-2026-red"
-    },
-    {
       "date": "2024 — Present",
       "type": "career",
       "title": "Building the DoneIsBetter portfolio",
@@ -147,34 +140,6 @@
       "type": "career",
       "title": "A new chapter in entrepreneurship",
       "text": "Following a stroke, left the media industry and shifted focus to supporting early-stage businesses and making seed investments."
-    },
-    {
-      "date": "2006",
-      "type": "personal",
-      "title": "Portrait · 2006",
-      "text": "A portrait from 2006.",
-      "photo": "csaba-2006"
-    },
-    {
-      "date": "2004",
-      "type": "personal",
-      "title": "Portrait · 2004",
-      "text": "A portrait from 2004.",
-      "photo": "csaba-2004"
-    },
-    {
-      "date": "2002",
-      "type": "personal",
-      "title": "Portrait · 2002",
-      "text": "A portrait from 2002.",
-      "photo": "csaba-2002"
-    },
-    {
-      "date": "2000",
-      "type": "personal",
-      "title": "Portrait · 2000",
-      "text": "A portrait from 2000.",
-      "photo": "csaba-2000"
     },
     {
       "date": "Early 2000s",
