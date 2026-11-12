@@ -1,7 +1,7 @@
 {
   "kicker": "Visual Archive",
   "title": "On stages, on panels, on camera.",
-  "intro": "Portraits across the years, with dates following your supplied year reference. Basketball: Nagytétény SE and the Kelenföld Vandals (1990–1993).",
+  "intro": "Portraits through the years, from basketball with Nagytétény SE and the Kelenföld Vandals to today.",
   "initiallyVisible": 9,
   "photos": [
     { "image": "csaba-2026-red", "alt": "Portrait of Csaba Moldován in 2026", "caption": "Portrait · 2026" },
@@ -10,8 +10,8 @@
     { "image": "csaba-2004", "alt": "Portrait of Csaba Moldován in 2004", "caption": "Portrait · 2004" },
     { "image": "csaba-2002", "alt": "Portrait of Csaba Moldován in 2002", "caption": "Portrait · 2002" },
     { "image": "csaba-2000", "alt": "Portrait of Csaba Moldován in 2000", "caption": "Portrait · 2000" },
-    { "image": "csaba-1994", "alt": "Basketball portrait of Csaba Moldován labelled 1994 in the supplied year reference", "caption": "Basketball portrait · 1994 year reference" },
-    { "image": "csaba-1991", "alt": "Basketball portrait of Csaba Moldován labelled 1991 in the supplied year reference", "caption": "Basketball portrait · 1991 year reference" },
+    { "image": "csaba-1994", "alt": "Csaba Moldován playing basketball with Kelenföld Vandals in 1994", "caption": "1994 · Played basketball at Kelenföld Vandals Streetball Collective" },
+    { "image": "csaba-1991", "alt": "Portrait of Csaba Moldován in a basketball outfit in 1991", "caption": "1991 · Basketball at Nagytétény SE and Kelenföld Vandals" },
     { "image": "media-gitex", "alt": "Csaba Moldován delivering a keynote at GITEX Global 2022 in Dubai", "caption": "Keynote at GITEX Global 2022, Dubai — \"Creating a bolder digital future together\"" },
     { "image": "award-hrbest", "alt": "Csaba Moldován receiving the HRBEST 2019 Gold award for Profession / Abimato", "caption": "HRBEST 2019 — Gold (Arany): Product of the Year in HR · Profession (Abimato)" },
     { "image": "media-gitex-africa", "alt": "Csaba Moldován on the Fintech & Blockchain jury at GITEX Africa, Marrakesh", "caption": "Jury at GITEX Africa (Marrakesh) — judging 400+ African startups · Fintech & Blockchain" },
