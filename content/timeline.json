@@ -1,7 +1,7 @@
 {
   "kicker": "Timeline",
   "title": "The story so far.",
-  "intro": "Company chapters, speaking appearances and recognition — all in one thread.",
+  "intro": "From early basketball and television to product leadership, startups and locally deployed AI.",
   "initiallyVisible": 9,
   "types": [
     { "id": "all", "label": "All" },
@@ -61,7 +61,7 @@
       "text": "Developing AI models and business software with a focus on privacy, security and technological independence."
     },
     {
-      "date": "2021 — 2024",
+      "date": "June 2021 — Present",
       "type": "career",
       "title": "Corporate Strategy Specialist",
       "org": "Seyu — \"Together for victory!\"",
@@ -75,11 +75,11 @@
       "photo": "media-sport-forum"
     },
     {
-      "date": "2020 — 2021",
+      "date": "March 2020 — November 2021",
       "type": "career",
       "title": "Co-Founder (Charity)",
       "org": "amanoba",
-      "text": "Transforming education during COVID — agile coaching and digital strategy for distance learning, serving students and teachers across Hungary."
+      "text": "Co-founded a response to COVID-era school closures. More than 100 product owners, developers and Scrum Masters helped over 700 educational institutions move to digital learning."
     },
     {
       "date": "2019",
@@ -90,11 +90,19 @@
       "photo": "award-hrbest"
     },
     {
-      "date": "2019 — 2023",
+      "date": "December 2019 — December 2023",
       "type": "career",
       "title": "Venture Partner",
       "org": "Hiventures — for Hungarian innovative startups",
       "text": "Digital strategy, market research and hands-on support for founders — empowering startups for success inside Hungary's leading early-stage fund."
+    },
+    {
+      "date": "January 2017 — December 2019",
+      "type": "career",
+      "title": "Head of Future Lab · Profession.hu",
+      "org": "Ringier Axel Springer · Hungary",
+      "text": "Built and led Europe’s largest HR research lab and an MVP Factory, delivering prototypes for job portals and HR companies in 10+ countries. Abimato won HRBEST Gold in 2019.",
+      "photo": "award-hrbest"
     },
     {
       "date": "2018",
@@ -125,17 +133,32 @@
       "photo": "media-ibc"
     },
     {
-      "date": "2016",
+      "date": "January 2016 — Present",
       "type": "career",
-      "title": "Founded Moldován Csaba Kft",
+      "title": "CXO & Founder · Moldován Csaba Kft",
       "org": "Budapest, Hungary",
       "text": "Established the product studio and venture vehicle — \"Make your product done.\""
     },
     {
-      "date": "2014",
+      "date": "February 2015 — January 2017",
       "type": "career",
-      "title": "Big data, recommendation systems & machine learning",
-      "text": "Returned to technology development, working on data analytics and machine learning projects in London and Brussels."
+      "title": "Product Director · Riaktr",
+      "org": "Brussels, Belgium",
+      "text": "Led product teams turning complex telecom data and client needs into scalable products and MVPs."
+    },
+    {
+      "date": "January 2014 — September 2015",
+      "type": "career",
+      "title": "VP of Product · ImpressTV",
+      "org": "PortfoLion Capital Partners · London",
+      "text": "Led product and acquisition knowledge transfer for personalised recommendations, targeted advertising and audience analytics. In 2014, the service delivered over 200 million recommendations a day."
+    },
+    {
+      "date": "September 2011 — October 2014",
+      "type": "career",
+      "title": "Head of Products · Leonar3Do",
+      "org": "Hungary",
+      "text": "Led product development for Leopoly, moved products toward SaaS, and supported international expansion across EMEA, Turkey, India and Russia."
     },
     {
       "date": "2011",
@@ -146,35 +169,37 @@
     {
       "date": "2009",
       "type": "career",
-      "title": "A new chapter in entrepreneurship",
-      "text": "Following a stroke, left the media industry and shifted focus to supporting early-stage businesses and making seed investments."
+      "title": "A broader focus on early-stage businesses",
+      "text": "After a stroke, began supporting startups and making seed investments while continuing media work with Telemedia through 2013."
     },
     {
-      "date": "2006",
+      "date": "July 2007 — June 2013",
       "type": "career",
-      "title": "Building studios around the world",
-      "text": "My television work spanned more than 40 studios in countries from Hungary and Lebanon to China.",
+      "title": "Co-founder · International Media Centre",
+      "org": "Hungary · Central Europe",
+      "text": "Launched seven thematic television channels and built Central Europe’s first HD studio centre, with five studios."
+    },
+    {
+      "date": "January 2005 — December 2008",
+      "type": "career",
+      "title": "Co-founder · MEXAW",
+      "org": "Lebanon · China",
+      "text": "Launched the 24/7 MusicBox Asia channel in China and built three television studios and four thematic channels in Lebanon.",
       "photo": "csaba-2006"
     },
     {
-      "date": "2004",
+      "date": "August 2001 — July 2008",
       "type": "career",
-      "title": "Taking interactive television global",
-      "text": "Premium-rate quiz shows reached more than 200 TV channels in nearly 70 countries.",
+      "title": "Product Director · Telemedia InteracTV",
+      "text": "Joined as employee seven and helped grow the company to 700 people. Its interactive shows reached 70+ channels, with 20+ studios worldwide.",
       "photo": "csaba-2004"
     },
     {
-      "date": "2002",
+      "date": "September 1994 — August 2001",
       "type": "career",
-      "title": "Live television, powered by viewers",
-      "text": "Interactive call-in games let viewers take part in live television quiz shows from home.",
-      "photo": "csaba-2002"
-    },
-    {
-      "date": "2000",
-      "type": "career",
-      "title": "Interactive television takes off",
-      "text": "I helped bring premium-rate call-in quiz shows to more than 200 channels in nearly 70 countries.",
+      "title": "Head of Design & Lab · MTVA",
+      "org": "Hungarian National Television",
+      "text": "Started as a graphic operator and later led Creative and R&D. Work included the 1998 live sports broadcasts on the internet, Hungary’s first live virtual studio, and ‘Fragments from Nagano,’ an early Hungarian blog.",
       "photo": "csaba-2000-tv"
     },
     {
@@ -191,13 +216,6 @@
       "org": "Streetball Collective",
       "text": "Played basketball for Nagytétény SE and was part of the Kelenföld Vandals Streetball Collective.",
       "photo": "csaba-1991"
-    },
-    {
-      "date": "Earlier",
-      "type": "career",
-      "title": "Head of Future Lab · Product & Project Leadership",
-      "org": "Profession.hu · ImpressTV & more",
-      "text": "Two decades leading product development and project management — building holistic, system-level products and high-performing agile teams."
     }
   ]
 }
