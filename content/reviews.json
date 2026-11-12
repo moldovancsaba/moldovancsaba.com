@@ -1,0 +1,18 @@
+{
+  "kicker": "Reviews & Recommendations",
+  "title": "What clients & partners say.",
+  "ratingMeta": "22 reviews on Google · Moldovan Csaba Ltd",
+  "ratingCta": "See on Google",
+  "reviews": [
+    { "source": "google", "who": "Krisztián Kasz", "label": "Google review", "text": "Csaba is an open-minded, cheerful business professional who always seeks new opportunities and innovations that could make the world a better place. His fast, to-the-point thinking helps others grow with rapid speed. A highly recommended business partner!" },
+    { "source": "google", "who": "Talk at Ease", "label": "Google review", "text": "The best thing that ever happened to our company is that Csaba supports us with all his expertise and precious knowledge in the field of business. A true professional with a great personality." },
+    { "source": "google", "who": "Nemes Gyula", "label": "Google review", "text": "Csaba's thorough professional training, accurate and individual solutions, and his wide-ranging knowledge and network of contacts are a huge support for our project." },
+    { "source": "google", "who": "Gergő Prémecz", "label": "Google review", "text": "Csaba's tireless help and professional support ensured the success of our product launch." },
+    { "source": "google", "who": "Róbert Szabó", "label": "Google review", "text": "The lucky ones who get to Csaba feel, from the very first meeting, that they've \"come home.\" Rare and tremendous." },
+    { "source": "google", "who": "Tamás Varjú & Roland Biro", "label": "Google reviews", "text": "Flexible. Prepared. A professional with vast experience who can always bring another perspective into the conversation — and a great help in developing our business." },
+    { "source": "linkedin", "who": "István Péter Martis", "label": "CEO · M&A · LinkedIn recommendation", "text": "A truly creative person with an agile mindset — capable of looking at things from a very different angle and turning ideas into concepts fast by setting up and managing agile teams." },
+    { "source": "linkedin", "who": "Adél Máté", "label": "LinkedIn recommendation", "text": "An absolute pleasure to work with. A seasoned project manager with international experience, Csaba truly embodies the mantra \"Done is better than perfect,\" consistently driving projects to successful completion with focus and energy." },
+    { "source": "linkedin", "who": "Krisztina Balla", "label": "Client · LinkedIn recommendation", "text": "Csaba showed excellent communication skills and consistently exceeded our expectations. Charismatic and well-spoken — qualities that serve him well in supporting partner companies." },
+    { "source": "linkedin", "who": "Ferenc Mihála", "label": "LinkedIn recommendation", "text": "A very talented, broad-minded guy whose biggest strength is the ability to see things in a holistic, system view. Nothing goes past him — one of the very best project managers." }
+  ]
+}

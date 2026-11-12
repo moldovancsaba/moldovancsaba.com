@@ -5,51 +5,69 @@ entrepreneur, product builder and venture partner based in Budapest.
 
 > Make your product done.
 
-A fast, dependency-free static site built for **GitHub Pages**.
+A fast static site with **no dependencies**: content lives in JSON, a small Node script
+turns it into HTML, and GitHub Pages serves the result straight from this branch.
 
-## What's here
+## How it fits together
 
-| File | Purpose |
-|------|---------|
-| `index.html` | The single-page site (hero, about, method, experience, speaking, work, reviews, company, credentials, contact) |
-| `assets/styles.css` | Styling, light/dark theme, responsive layout |
-| `assets/script.js` | Theme toggle, project filtering, scroll reveal |
-| `assets/portrait.jpg` | Profile headshot |
-| `assets/stage-*.jpg` | Speaking / on-stage photos |
-| `assets/favicon.svg` | Site icon |
-| `CNAME` | Custom domain (`moldovancsaba.com`) |
-| `.github/workflows/deploy.yml` | Auto-deploy to GitHub Pages |
+| Path | What it is | Edit by hand? |
+|------|------------|---------------|
+| `content/*.json` | All text: bio, method, projects, timeline, gallery captions, reviews, credentials, links | **Yes** — this is where content changes go |
+| `src/templates/` | HTML templates (one function per page section) | Yes |
+| `src/styles/` | CSS: `tokens` (colours, type, spacing) → `base` → `components` → `sections` | Yes |
+| `src/scripts/main.js` | Theme toggle, mobile menu, filters, "show more", photo lightbox | Yes |
+| `media/` | Original photos (JPEG) — also the fallback for browsers without AVIF | Add photos here |
+| `scripts/` | `build`, `dev`, `check` and `images` tools (Node built-ins only) | Rarely |
+| `index.html`, `404.html`, `sitemap.xml`, `assets/site.css`, `assets/site.js` | **Generated** by `scripts/build.mjs` | No — rebuild instead |
+| `assets/img/` | **Generated** responsive AVIF renditions + `manifest.json` | No — run `scripts/images.mjs` |
+| `CNAME`, `.nojekyll`, `robots.txt` | GitHub Pages / crawler configuration | Rarely |
 
-## Run locally
+## Working on the site
 
-It's plain HTML/CSS/JS — open `index.html` in a browser, or serve it:
+Requires Node 20 or newer. There is nothing to install.
 
 ```bash
-python3 -m http.server 8080
-# then visit http://localhost:8080
+node scripts/dev.mjs      # preview at http://localhost:8100, rebuilds on every change
+node scripts/build.mjs    # one-off build
+node scripts/check.mjs    # verify links, anchors, images, metadata and the CSP hash
 ```
 
-## Deploy (GitHub Pages)
+### Common changes
 
-This repo deploys automatically via GitHub Actions. To enable it once:
+- **Change any text** — edit the matching file in `content/`. Inside prose, `**bold**` and
+  `*emphasis*` are supported.
+- **Add a project, review or timeline entry** — add an object to the list in
+  `content/projects.json`, `content/reviews.json` or `content/timeline.json`.
+  Timeline entries can show a photo: set `"photo"` to the `image` name of a gallery photo.
+- **Add a photo** — put `name.jpg` in `media/`, add it to `content/gallery.json`
+  (`image`, `alt`, `caption`), then run `node scripts/images.mjs` (macOS only — it uses the
+  built-in `sips` tool) and rebuild.
+- **Change colours or fonts** — `src/styles/tokens.css`. Each colour is a
+  `light-dark(light, dark)` pair, so both themes stay in one place.
 
-1. Go to **Settings → Pages**.
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Push to the deploy branch — the workflow publishes the site.
-4. Keep the `CNAME` file so the `moldovancsaba.com` custom domain stays mapped.
+## Deploying
 
-## Sections
+GitHub Pages publishes the `main` branch root on the `moldovancsaba.com` custom domain
+(`CNAME`). Because Pages serves the files as committed, **commit the generated files too**:
 
-- **Hero** — headline, portrait and key stats (incl. 5.0★ Google rating)
-- **About** — entrepreneur profile and focus areas
-- **Method** — the 8-D framework (Discover → Drive)
-- **Experience** — career timeline (CXO/Founder, Seyu, Hiventures, amanoba, …)
-- **Speaking** — on-stage gallery (Business Fest, HRFEST)
-- **Work** — selected products (amanoba, messmass, hatori, narimato, reply, sso, spot, …) + collaborations
-- **Reviews** — Google reviews (5.0★, 22) and LinkedIn recommendations
-- **Company** — Moldován Csaba Kft services
-- **Credentials** — education and certifications
-- **Contact** — email and social links
+```bash
+node scripts/build.mjs && node scripts/check.mjs
+git add -A && git commit
+```
+
+The `Check site` workflow rebuilds on every push and pull request and fails if the committed
+output is stale or a check does not pass.
+
+## Design notes
+
+- Light and dark themes follow the visitor's system setting; the toggle stores an explicit choice.
+- The page works without JavaScript: all content is visible, the menu stays reachable and
+  photos open as plain links.
+- Photos are served as AVIF at three sizes (`srcset`), lazy-loaded, with intrinsic dimensions
+  so nothing shifts while loading.
+- A Content-Security-Policy restricts the page to its own files plus Google Fonts.
+- Motion (headline strike-through, rotating stamp, scroll reveal) is disabled for visitors who
+  prefer reduced motion.
 
 ---
 

@@ -1,0 +1,128 @@
+/* Reusable pieces: buttons, chips, tags, cards, navigation, footer, lightbox. */
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 46px; padding: 0 22px; border-radius: 999px;
+  border: 1px solid var(--ink); background: transparent; color: var(--ink);
+  font-weight: 600; font-size: 0.95rem; line-height: 1; text-decoration: none; cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn--primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn--primary:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.btn--small { min-height: 38px; padding: 0 16px; font-size: 0.875rem; }
+
+.icon-btn {
+  display: grid; place-items: center; width: 38px; height: 38px; padding: 0;
+  border: 1px solid var(--line); border-radius: 50%; background: transparent; cursor: pointer;
+  transition: border-color 0.2s var(--ease);
+}
+.icon-btn:hover { border-color: var(--ink); }
+.icon-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.icon-btn__half { fill: currentColor; stroke: none; }
+
+/* ---------- Filter chips ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+.chip {
+  min-height: 38px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--ink-2); font-size: 0.875rem; font-weight: 500; cursor: pointer;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+/* Filtering needs JS; without it the chips would do nothing. */
+html:not(.js) .chips { display: none; }
+
+/* ---------- Tags & badges ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.tags li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.8125rem; color: var(--ink-2); }
+
+.badge {
+  font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); white-space: nowrap;
+}
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px, 3vw, 32px); }
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.nav__inner { display: flex; align-items: center; gap: 20px; height: var(--nav-h); }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 1.0625rem; letter-spacing: -0.01em; }
+.brand:hover { color: inherit; }
+.brand__mark { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); }
+.brand__mark svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+
+.nav__menu { margin-left: auto; }
+.nav__links { display: flex; gap: clamp(14px, 2.2vw, 28px); }
+.nav__links a { display: block; padding: 8px 0; color: var(--ink-2); font-size: 0.9375rem; font-weight: 500; text-decoration: none; }
+.nav__links a:hover, .nav__links a[aria-current="true"] { color: var(--ink); }
+.nav__links a[aria-current="true"] { box-shadow: inset 0 -2px 0 var(--accent); }
+.nav__actions { display: flex; align-items: center; gap: 10px; }
+
+.nav__toggle { display: none; position: relative; width: 38px; height: 38px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; cursor: pointer; }
+.nav__toggle span { position: absolute; left: 10px; right: 10px; height: 1.5px; background: currentColor; transition: transform 0.25s var(--ease); }
+.nav__toggle span:first-child { top: 14px; }
+.nav__toggle span:last-child { bottom: 14px; }
+.nav__toggle[aria-expanded="true"] span:first-child { transform: translateY(4.25px) rotate(45deg); }
+.nav__toggle[aria-expanded="true"] span:last-child { transform: translateY(-4.25px) rotate(-45deg); }
+
+@media (max-width: 860px) {
+  .nav__actions { margin-left: auto; }
+  .nav__menu { margin-left: 0; }
+
+  /* With JS: links collapse behind the menu button. */
+  .js .nav__toggle { display: block; order: 3; }
+  .js .nav__menu {
+    display: none; position: absolute; left: 0; right: 0; top: 100%;
+    background: var(--paper); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 20px;
+  }
+  .js .nav.is-open .nav__menu { display: block; }
+  .js .nav__links { flex-direction: column; gap: 0; }
+  .js .nav__links a { padding: 14px 0; border-bottom: 1px solid var(--line); font-family: var(--font-display); font-size: 1.375rem; font-weight: 600; color: var(--ink); }
+  .js .nav__links a[aria-current="true"] { box-shadow: none; color: var(--accent); }
+
+  /* Without JS: links stay reachable on a second, scrollable row. */
+  html:not(.js) .nav__inner { flex-wrap: wrap; height: auto; padding-block: 12px; row-gap: 4px; }
+  html:not(.js) .nav__menu { order: 3; width: 100%; overflow-x: auto; }
+}
+@media (max-width: 420px) {
+  .nav__actions .btn { display: none; }
+}
+
+/* ---------- Footer ---------- */
+.footer { padding-block: 28px; border-top: 1px solid var(--line); font-size: 0.875rem; color: var(--ink-2); }
+.footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.footer__motto { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+  background: #0c0c0b; color: #f1ede2;
+}
+.lightbox__figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 14px; height: 100%; padding: 56px clamp(16px, 6vw, 88px) 24px; justify-items: center; }
+/* The frame fills the row; the photo is positioned inside it so it can never push the caption out. */
+.lightbox__frame { position: relative; min-height: 0; width: 100%; height: 100%; }
+.lightbox__frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.lightbox__figure figcaption { max-width: 70ch; text-align: center; font-size: 0.9375rem; color: #c9c4b6; }
+.lightbox__btn {
+  position: absolute; display: grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  border: 1px solid rgb(241 237 226 / 0.35); border-radius: 50%; background: rgb(10 10 9 / 0.6); color: inherit;
+  font-size: 1.125rem; line-height: 1; cursor: pointer; transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.lightbox__btn:hover { background: #f1ede2; color: #121110; }
+.lightbox__close { top: 12px; right: 12px; }
+.lightbox__prev { left: 12px; top: 50%; translate: 0 -50%; }
+.lightbox__next { right: 12px; top: 50%; translate: 0 -50%; }
+@media (max-width: 700px) {
+  .lightbox__figure { padding: 64px 12px 84px; }
+  .lightbox__prev, .lightbox__next { top: auto; bottom: 20px; translate: none; }
+  .lightbox__prev { left: calc(50% - 52px); }
+  .lightbox__next { right: calc(50% - 52px); }
+}

@@ -1,0 +1,157 @@
+{
+  "kicker": "Timeline",
+  "title": "The story so far.",
+  "intro": "Company chapters, speaking appearances and recognition — all in one thread.",
+  "initiallyVisible": 9,
+  "types": [
+    { "id": "all", "label": "All" },
+    { "id": "career", "label": "Career" },
+    { "id": "speaking", "label": "Speaking" },
+    { "id": "award", "label": "Awards" }
+  ],
+  "items": [
+    {
+      "date": "2024 — Present",
+      "type": "career",
+      "title": "Building the DoneIsBetter portfolio",
+      "org": "Moldován Csaba Kft — narimato · hatori · amanoba · messmass · sso · spot · reply",
+      "text": "Shipping a compounding stack of interconnected platforms — AI assistants, sports analytics, SSO infrastructure, learning tools and content platforms — all open on GitHub and growing."
+    },
+    {
+      "date": "2023",
+      "type": "speaking",
+      "title": "Jury & Pre-seed Partner · GITEX Africa, Marrakesh",
+      "text": "Judged 400+ African startups on the Fintech & Blockchain track — and closed three pre-seed investments on the floor, backing founders from the African continent.",
+      "photo": "media-gitex-africa"
+    },
+    {
+      "date": "2023",
+      "type": "speaking",
+      "title": "Host · Taipei Smart City Summit & Expo 2023",
+      "text": "Hosted the Taipei Pavilion at the Smart City Summit & Expo 2023 in Taiwan — on-floor interviews and sessions on smart-city innovation and global partnerships.",
+      "photo": "taipei-1"
+    },
+    {
+      "date": "2023",
+      "type": "speaking",
+      "title": "Keynote · Hungary–Taiwan Bilateral Reception",
+      "text": "Keynote address at the Hungary–Taiwan bilateral reception in Budapest, representing digital entrepreneurship and cross-border innovation.",
+      "photo": "hu-taiwan"
+    },
+    {
+      "date": "2022",
+      "type": "speaking",
+      "title": "Keynote · GITEX Global, Dubai",
+      "text": "\"Creating a bolder digital future together\" — keynote at GITEX Global 2022, one of the world's largest technology conferences.",
+      "photo": "media-gitex"
+    },
+    {
+      "date": "Since 2022",
+      "type": "career",
+      "title": "Locally deployed AI and business applications",
+      "text": "Developing AI models and business software with a focus on privacy, security and technological independence."
+    },
+    {
+      "date": "2021 — 2024",
+      "type": "career",
+      "title": "Corporate Strategy Specialist",
+      "org": "Seyu — \"Together for victory!\"",
+      "text": "Business management and startup development across the fan-engagement platform, shaping product direction and strategic partnerships."
+    },
+    {
+      "date": "2021",
+      "type": "speaking",
+      "title": "International Speaker · Fórum Internacional de Empreendedorismo no Esporte",
+      "text": "International keynote on entrepreneurship and innovation in the sports industry.",
+      "photo": "media-sport-forum"
+    },
+    {
+      "date": "2020 — 2021",
+      "type": "career",
+      "title": "Co-Founder (Charity)",
+      "org": "amanoba",
+      "text": "Transforming education during COVID — agile coaching and digital strategy for distance learning, serving students and teachers across Hungary."
+    },
+    {
+      "date": "2019",
+      "type": "award",
+      "title": "HRBEST 2019 — Gold (Arany)",
+      "org": "Product of the Year in HR · Profession (Abimato)",
+      "text": "Hungary's highest HR innovation recognition — awarded for Abimato, the recruitment platform built under the Profession.hu brand.",
+      "photo": "award-hrbest"
+    },
+    {
+      "date": "2019 — 2023",
+      "type": "career",
+      "title": "Venture Partner",
+      "org": "Hiventures — for Hungarian innovative startups",
+      "text": "Digital strategy, market research and hands-on support for founders — empowering startups for success inside Hungary's leading early-stage fund."
+    },
+    {
+      "date": "2018",
+      "type": "speaking",
+      "title": "Opening Keynote · Blockchain Conference, Zaporizhzhia",
+      "text": "\"The pure math behind the cash\" — opening keynote before a packed audience at the Blockchain Conference in Ukraine.",
+      "photo": "ua-blockchain"
+    },
+    {
+      "date": "2018",
+      "type": "speaking",
+      "title": "IDC Chief Data Officer Forum 2018",
+      "text": "\"2020, the year of personal data\" — presenting on data strategy and privacy at the IDC CDO Forum.",
+      "photo": "media-idc"
+    },
+    {
+      "date": "2018",
+      "type": "speaking",
+      "title": "Panel · Central European University, Budapest",
+      "text": "Panel discussion at CEU on technology, digital strategy and the future of work.",
+      "photo": "media-ceu"
+    },
+    {
+      "date": "2017",
+      "type": "speaking",
+      "title": "Speaker · IBC 2017, Amsterdam",
+      "text": "Presented at IBC — one of the world's leading media and entertainment technology conferences.",
+      "photo": "media-ibc"
+    },
+    {
+      "date": "2016",
+      "type": "career",
+      "title": "Founded Moldován Csaba Kft",
+      "org": "Budapest, Hungary",
+      "text": "Established the product studio and venture vehicle — \"Make your product done.\""
+    },
+    {
+      "date": "2014",
+      "type": "career",
+      "title": "Big data, recommendation systems & machine learning",
+      "text": "Returned to technology development, working on data analytics and machine learning projects in London and Brussels."
+    },
+    {
+      "date": "2011",
+      "type": "career",
+      "title": "Launched Indulj.Be and Mobile Weekend",
+      "text": "Started a crowdfunding platform and organised a Central European mobile application development competition."
+    },
+    {
+      "date": "2009",
+      "type": "career",
+      "title": "A new chapter in entrepreneurship",
+      "text": "Following a stroke, left the media industry and shifted focus to supporting early-stage businesses and making seed investments."
+    },
+    {
+      "date": "Early 2000s",
+      "type": "career",
+      "title": "Interactive television across nearly 70 countries",
+      "text": "Helped bring premium-rate television quiz shows to more than 200 channels and established over 40 studios across multiple countries."
+    },
+    {
+      "date": "Earlier",
+      "type": "career",
+      "title": "Head of Future Lab · Product & Project Leadership",
+      "org": "Profession.hu · ImpressTV & more",
+      "text": "Two decades leading product development and project management — building holistic, system-level products and high-performing agile teams."
+    }
+  ]
+}

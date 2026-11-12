@@ -1,0 +1,178 @@
+{
+  "url": "https://moldovancsaba.com",
+  "lang": "en",
+  "person": {
+    "name": "Csaba Zoltán Moldován",
+    "alternateName": "Moldován Csaba Zoltán",
+    "shortName": "Moldován Csaba",
+    "jobTitle": "Mathematician, Serial Entrepreneur & Technology Innovator",
+    "alumniOf": "Eötvös Loránd University",
+    "award": "HRBEST 2019 Gold (Arany) — Product of the Year in HR (Profession / Abimato)",
+    "portrait": "portrait"
+  },
+  "company": {
+    "name": "Moldován Csaba Kft",
+    "alternateName": "Moldovan Csaba Ltd",
+    "slogan": "Done is better than perfect.",
+    "locality": "Budapest",
+    "country": "HU",
+    "location": "Budapest, Hungary",
+    "linkedin": "https://hu.linkedin.com/company/moldovancsaba",
+    "rating": { "value": "5.0", "count": 22, "best": 5 }
+  },
+  "meta": {
+    "title": "Moldován Csaba — Product Builder & Entrepreneur | Moldován Csaba Kft",
+    "description": "Csaba Zoltán Moldován — entrepreneur, CXO and product builder in Budapest. Founder of Moldován Csaba Kft. Done is better than perfect — I make your product done. 5.0★ on Google (22 reviews).",
+    "ogTitle": "Moldován Csaba — Product Builder & Entrepreneur",
+    "ogDescription": "Done is better than perfect. Entrepreneur, CXO and product builder based in Budapest. Founder of Moldován Csaba Kft.",
+    "twitter": "@moldovan"
+  },
+  "links": {
+    "email": "moldovancsaba@gmail.com",
+    "github": "https://github.com/moldovancsaba",
+    "repositories": "https://github.com/moldovancsaba?tab=repositories",
+    "linkedin": "https://www.linkedin.com/in/csabamoldovan/",
+    "x": "https://x.com/moldovan",
+    "wikipedia": "https://en.wikipedia.org/wiki/User:Moldovan",
+    "producthunt": "https://www.producthunt.com/@moldovan",
+    "googleReviews": "https://www.google.com/search?q=Moldovan+Csaba+Ltd+reviews"
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Method", "href": "#method" },
+    { "label": "Work", "href": "#work" },
+    { "label": "Timeline", "href": "#timeline" },
+    { "label": "Reviews", "href": "#reviews" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "eyebrow": "CXO & Founder · Entrepreneur · Budapest",
+    "lead": "I'm **Csaba Zoltán Moldován** — founder of **Moldován Csaba Kft**. I turn ideas into shipped products and help founders make their product *done*: from discovery to a live, data-driven platform. Product leader, builder, and venture partner.",
+    "primaryCta": { "label": "See the work", "href": "#work" },
+    "secondaryCta": { "label": "Start a project", "href": "#contact" },
+    "award": "HRBEST 2019 Gold — Product of the Year in HR",
+    "stamp": "Make your product done",
+    "stats": [
+      { "value": "5.0★", "label": "Google rating · 22 reviews" },
+      { "value": "€5M+", "label": "Raised for early-stage startups" },
+      { "value": "30+", "label": "Products built & in progress" },
+      { "value": "4.3k", "label": "LinkedIn followers" }
+    ]
+  },
+  "stages": {
+    "label": "On stage at",
+    "items": [
+      "GITEX Global · Dubai",
+      "GITEX Africa · Marrakesh",
+      "IBC · Amsterdam",
+      "Smart City Summit · Taipei",
+      "IDC CDO Forum",
+      "CEU · Budapest",
+      "Business Fest · Budapest"
+    ]
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Part founder, part product owner, part builder.",
+    "paragraphs": [
+      "I’m a mathematician, serial entrepreneur and technology innovator. In the early 2000s, I helped bring premium-rate interactive television quiz shows to more than 200 channels in nearly 70 countries, establishing over 40 studios across Europe, the Middle East and Asia.",
+      "After a stroke in 2009, I left the media industry and turned to early-stage businesses and technology ventures. I launched **Indulj.Be** and **Mobile Weekend** in 2011, worked with startups including **Grofie** and **Leonar3Do**, then focused on big data, recommendation systems and machine learning. From 2016 to 2020, I led Ringier Axel Springer’s Abimato Laboratory and an MVP Factory operating across 21 European countries.",
+      "During the COVID-19 lockdowns, I founded **amanoba**, supporting the move to digital education across more than 700 institutions in three countries. Since 2022, my work has focused on locally deployed AI and business applications, with an emphasis on privacy, security and technological independence. I continue building products and supporting founders through Moldován Csaba Kft."
+    ],
+    "tags": [
+      "Product Development",
+      "Business Development",
+      "Problem Solving",
+      "Communication",
+      "Leadership",
+      "Scrum & Agile",
+      "Venture Partner"
+    ],
+    "motto": "Done is better than perfect",
+    "facts": [
+      { "term": "Role", "value": "CXO & Founder" },
+      { "term": "Company", "value": "Moldován Csaba Kft" },
+      { "term": "Based in", "value": "Budapest, Hungary" },
+      { "term": "Network", "value": "4,361 followers" },
+      { "term": "Brands", "value": "narimato · DoneIsBetter" }
+    ]
+  },
+  "method": {
+    "kicker": "The Method",
+    "title": "Eight D's, from idea to impact.",
+    "intro": "Every engagement runs through one repeatable framework — so nothing falls through the cracks between strategy and shipping.",
+    "steps": [
+      { "name": "Discover", "text": "Understand the problem, users and market. Validate the real need before a line of code." },
+      { "name": "Discuss", "text": "Align stakeholders on goals, constraints and success metrics." },
+      { "name": "Define", "text": "Turn intent into a sharp scope, roadmap and prioritised backlog." },
+      { "name": "Design", "text": "Shape the experience — flows, interface and architecture." },
+      { "name": "Develop", "text": "Build in tight iterations with working software every step." },
+      { "name": "Deliver", "text": "Ship to production, instrument it, and get it into real hands." },
+      { "name": "Data", "text": "Measure behaviour and outcomes — let evidence steer decisions." },
+      { "name": "Drive", "text": "Iterate, grow and pivot. Keep momentum until it compounds." }
+    ]
+  },
+  "studio": {
+    "kicker": "The Company",
+    "title": "Moldován Csaba Kft",
+    "paragraphs": [
+      "A Budapest-based product studio and venture vehicle. We partner with founders and teams to **design, build and ship software products** — and we invest our own time and craft into a growing portfolio of platforms.",
+      "Whether you need a fractional product leader to steady a roadmap, a hands-on builder to take a concept to launch, or a partner to help you pivot — the goal is the same: **make your product done.**"
+    ],
+    "tags": [
+      "Change Management",
+      "Project Management",
+      "Management Consulting",
+      "UX Research & Design",
+      "Negotiation",
+      "Pricing Strategy",
+      "Public Speaking",
+      "Non-profit Consulting"
+    ],
+    "services": [
+      { "name": "Product Leadership", "text": "Fractional product ownership, discovery, roadmap and agile delivery for teams that need momentum." },
+      { "name": "0→1 Product Builds", "text": "From validated idea to a live, instrumented product — design, development and launch." },
+      { "name": "AI & Platforms", "text": "Local-first AI assistants, RAG systems, SSO and multi-tenant platforms, built to last." },
+      { "name": "Venture Partnership", "text": "Hands-on support for founders and pivots — strategy, product and execution." }
+    ]
+  },
+  "credentials": {
+    "award": {
+      "title": "HRBEST 2019 — Gold (Arany)",
+      "text": "Product of the Year in HR · Profession (Abimato) — recognised at Hungary's leading HR innovation awards."
+    },
+    "education": {
+      "kicker": "Education",
+      "title": "Foundations.",
+      "items": [
+        { "name": "Eötvös Loránd University", "detail": "Mathematics · 1994–1998" },
+        { "name": "Kodolányi János University", "detail": "BA, Communication · 2000–2003" },
+        { "name": "University of Alberta — School of Business", "detail": "Industrial & Product Design · 2015–2017" },
+        { "name": "Nanyang Technological University, Singapore", "detail": "Art & Art Studies · 2014–2015" }
+      ]
+    },
+    "certifications": {
+      "kicker": "Licenses & Certifications",
+      "title": "Always learning.",
+      "items": [
+        { "name": "Leadership in a Time of Crisis", "detail": "Stanford University Graduate School of Business · 2020" },
+        { "name": "Google Digital Workshop — Online Marketing", "detail": "IAB · 2017" },
+        { "name": "Agile Planning for Software Products", "detail": "Coursera · 2016" },
+        { "name": "Software Processes & Agile Practices", "detail": "Coursera · 2016" }
+      ]
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's make it done.",
+    "intro": "Have a product to build, a team to steer, or a pivot to navigate? I'd love to hear about it.",
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/moldovancsaba" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/csabamoldovan/" },
+      { "label": "Company page", "href": "https://hu.linkedin.com/company/moldovancsaba" },
+      { "label": "X / Twitter", "href": "https://x.com/moldovan" },
+      { "label": "Product Hunt", "href": "https://www.producthunt.com/@moldovan" },
+      { "label": "Wikipedia user page", "href": "https://en.wikipedia.org/wiki/User:Moldovan" }
+    ]
+  }
+}

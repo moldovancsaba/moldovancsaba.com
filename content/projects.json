@@ -1,0 +1,98 @@
+{
+  "kicker": "Selected Work",
+  "title": "Products I've built & shipped.",
+  "intro": "A live portfolio of platforms — most are open on GitHub. Filter by what you're looking for.",
+  "filters": [
+    { "id": "all", "label": "All" },
+    { "id": "ai", "label": "AI" },
+    { "id": "platform", "label": "Platforms" },
+    { "id": "infra", "label": "Infrastructure" }
+  ],
+  "projects": [
+    {
+      "name": "amanoba",
+      "category": "platform",
+      "badge": "Learning",
+      "text": "Gamified learning platform — courses delivered by email and in-app, with quizzes, achievements, a 50-level XP system and leaderboards. Powers the \"AI 30 Nap\" program.",
+      "tech": ["Next.js", "TypeScript", "MongoDB", "Mantine", "Stripe"],
+      "href": "https://github.com/moldovancsaba/amanoba"
+    },
+    {
+      "name": "messmass",
+      "category": "platform",
+      "badge": "Sports Analytics",
+      "text": "Enterprise platform for sports organisations and venues: real-time live-event reporting, sponsorship analytics, report authoring and Bitly attribution — in one product.",
+      "tech": ["Next.js", "TypeScript", "MongoDB", "WebSockets"],
+      "href": "https://github.com/moldovancsaba/messmass"
+    },
+    {
+      "name": "hatori",
+      "category": "ai",
+      "badge": "AI",
+      "text": "Local-first personal AI assistant. Private, auditable, and learns from real usage via a RAG pipeline. \"Everything started here.\"",
+      "tech": ["Python", "FastAPI", "PostgreSQL + pgvector", "MLX", "Ollama"],
+      "href": "https://github.com/moldovancsaba/hatori"
+    },
+    {
+      "name": "narimato",
+      "category": "platform",
+      "badge": "Product",
+      "text": "Anonymous, session-based card-ranking engine. Multi-tenant by organisation, seven play modes, and ELO-based global rankings — built mobile-first.",
+      "tech": ["Next.js", "Node.js", "MongoDB", "GA4"],
+      "href": "https://github.com/moldovancsaba/narimato"
+    },
+    {
+      "name": "reply",
+      "category": "ai",
+      "badge": "AI",
+      "text": "Local-first macOS communication workspace. Ingests your message sources, assembles contact context, and drafts message-backed replies.",
+      "tech": ["JavaScript", "Swift", "SQLite", "LanceDB"],
+      "href": "https://github.com/moldovancsaba/reply"
+    },
+    {
+      "name": "sso",
+      "category": "infra",
+      "badge": "Infrastructure",
+      "text": "Universal SSO service for the DoneIsBetter ecosystem — centralised auth with OAuth 2.0 / OpenID Connect, magic links and social login.",
+      "tech": ["Node.js", "OAuth 2.0", "OIDC"],
+      "href": "https://github.com/moldovancsaba/sso"
+    },
+    {
+      "name": "spot",
+      "category": "ai",
+      "badge": "AI",
+      "text": "{spot} — Smart Platform for Observing Threats. AI-assisted content classification over batched social-media data using deterministic local inference.",
+      "tech": ["Python", "FastAPI", "Swift (macOS)"],
+      "href": "https://github.com/moldovancsaba/spot"
+    },
+    {
+      "name": "misisimi",
+      "category": "platform",
+      "badge": "Platform",
+      "text": "\"CMS for the rest\" — a lightweight content management system built for non-enterprise teams who still want to ship fast.",
+      "tech": ["TypeScript", "Next.js"],
+      "href": "https://github.com/moldovancsaba/misisimi"
+    }
+  ],
+  "more": {
+    "names": ["step", "habigoal.com", "launchmass", "blockmass", "kidex", "budapest-night"],
+    "linkLabel": "browse all 30+ repositories"
+  },
+  "collaborations": {
+    "label": "Proud collaborations",
+    "items": [
+      { "name": "INSTABUY", "text": "Real-estate eCommerce" },
+      { "name": "MATIMATO", "text": "AI-driven gaming" },
+      { "name": "ORIANA", "text": "Low-code automation" },
+      { "name": "POPHONE", "text": "Premium tech marketplace" },
+      { "name": "STEP", "text": "Blockchain solutions" },
+      { "name": "I AM INTERN", "text": "Interns & opportunities" },
+      { "name": "SWAPTHECAP", "text": "Fashion marketplace" },
+      { "name": "MUMI", "text": "Job-market innovation" },
+      { "name": "ARE", "text": "AR experiences" },
+      { "name": "GODZIE", "text": "Interactive foosball" },
+      { "name": "HAIKOTO", "text": "Light & video experience" },
+      { "name": "ZYNTERN", "text": "HR & internships — mentored" }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+/* Design tokens. Every colour is a light-dark() pair, so a theme is just a
+   `color-scheme`: the OS preference by default, or the visitor's stored choice. */
+:root {
+  color-scheme: light dark;
+
+  --paper: light-dark(#f5f2ea, #121110);
+  --paper-2: light-dark(#ece8dc, #191816);
+  --card: light-dark(#fcfbf7, #1d1c19);
+  --ink: light-dark(#16150f, #f1ede2);
+  --ink-2: light-dark(#5c574c, #aaa496);
+  --ink-3: light-dark(#a39d8f, #6b675d);
+  --line: light-dark(#d8d2c2, #33312b);
+  --accent: light-dark(#c2330f, #ff6b47);
+  --accent-ink: light-dark(#ffffff, #121110);
+  --gold: light-dark(#8a6200, #f0c05a);
+
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --section: clamp(72px, 9vw, 132px);
+  --radius: 6px;
+  --nav-h: 64px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }

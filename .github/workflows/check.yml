@@ -1,0 +1,24 @@
+name: Check site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build
+        run: node scripts/build.mjs
+      - name: Built files are committed and up to date
+        run: git diff --exit-code -- index.html 404.html sitemap.xml assets/site.css assets/site.js
+      - name: Check links, images and metadata
+        run: node scripts/check.mjs

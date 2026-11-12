@@ -1,0 +1,31 @@
+{
+  "kicker": "Visual Archive",
+  "title": "On stages, on panels, on camera.",
+  "initiallyVisible": 9,
+  "photos": [
+    { "image": "media-gitex", "alt": "Csaba Moldován delivering a keynote at GITEX Global 2022 in Dubai", "caption": "Keynote at GITEX Global 2022, Dubai — \"Creating a bolder digital future together\"" },
+    { "image": "award-hrbest", "alt": "Csaba Moldován receiving the HRBEST 2019 Gold award for Profession / Abimato", "caption": "HRBEST 2019 — Gold (Arany): Product of the Year in HR · Profession (Abimato)" },
+    { "image": "media-gitex-africa", "alt": "Csaba Moldován on the Fintech & Blockchain jury at GITEX Africa, Marrakesh", "caption": "Jury at GITEX Africa (Marrakesh) — judging 400+ African startups · Fintech & Blockchain" },
+    { "image": "deal-1", "alt": "Csaba Moldován closing a pre-seed deal with founders at GITEX Africa 2023", "caption": "Closing the deal — 3 pre-seed investments at GITEX Africa 2023" },
+    { "image": "taipei-1", "alt": "Csaba Moldován hosting at the Taipei Smart City Conference 2023", "caption": "Hosting at the Taipei Smart City Conference 2023, Taiwan" },
+    { "image": "hu-taiwan", "alt": "Csaba Moldován giving a keynote at the Hungary–Taiwan bilateral reception, 2023", "caption": "Keynote · Hungary–Taiwan bilateral reception (Budapest delegation, 2023)" },
+    { "image": "ua-blockchain", "alt": "Csaba Moldován before a packed audience at the Blockchain Conference in Zaporizhzhia, Ukraine, 2018", "caption": "Opening keynote · Blockchain Conference, Zaporizhzhia, Ukraine (2018) — \"the pure math behind the cash\"" },
+    { "image": "media-ibc", "alt": "Csaba Moldován speaking at IBC 2017 in Amsterdam", "caption": "Speaking at IBC 2017, Amsterdam" },
+    { "image": "stage-1", "alt": "Csaba Moldován speaking on stage at Business Fest", "caption": "Business Fest — panel as founder of Moldován Csaba Kft" },
+    { "image": "deal-2", "alt": "Csaba Moldován with a backed founder at GITEX Africa 2023", "caption": "Backing African founders · GITEX Africa 2023" },
+    { "image": "deal-3", "alt": "Csaba Moldován with a Xygen Health founder at GITEX Africa 2023", "caption": "Pre-seed partner to early-stage health & tech startups" },
+    { "image": "taipei-2", "alt": "Csaba Moldován with the Taipei Pavilion team at Smart City Summit & Expo 2023", "caption": "Smart City Summit & Expo 2023 — Taipei Pavilion" },
+    { "image": "taipei-3", "alt": "Csaba Moldován interviewing at the Taipei Smart City expo", "caption": "On-floor interviews · smart-city innovation" },
+    { "image": "media-sport-forum", "alt": "Speaker banner for the Fórum Internacional de Empreendedorismo no Esporte 2021", "caption": "International speaker · Fórum Internacional de Empreendedorismo no Esporte 2021" },
+    { "image": "media-bizfest2", "alt": "Csaba Moldován moderating a panel at Budapest Business Fest", "caption": "Moderating · Budapest Business Fest (Business Builders)" },
+    { "image": "award-hrbest-2", "alt": "Csaba Moldován celebrating the HRBEST 2019 Gold award", "caption": "HRBEST 2019 Gold — the winning moment" },
+    { "image": "media-idc", "alt": "IDC Chief Data Officer Forum 2018 speaker banner", "caption": "IDC Chief Data Officer Forum 2018 — \"2020, the year of personal data\"" },
+    { "image": "media-ceu", "alt": "Panel discussion at Central European University, Budapest", "caption": "Central European University, Budapest · 2018 panel" },
+    { "image": "media-kutyukedd", "alt": "KÜTYÜKEDD Apple Event video thumbnail", "caption": "KÜTYÜKEDD — tech show: Apple Event coverage" },
+    { "image": "stage-2", "alt": "Csaba Moldován presenting an AI workshop", "caption": "AI-readiness & automation workshop" },
+    { "image": "media-talkshow", "alt": "Csaba Moldován on a live talk-show panel", "caption": "Live talk-show panel on hiring & tech" },
+    { "image": "media-studio", "alt": "Behind the scenes of a tech video shoot", "caption": "Behind the scenes — tech, AI & gadget videos" },
+    { "image": "media-zyntern", "alt": "Csaba Moldován with the zyntern.com startup team he mentored", "caption": "Mentoring zyntern.com — a startup team I coached" },
+    { "image": "media-conf", "alt": "Csaba Moldován networking at an international tech conference", "caption": "International conference — networking & partnerships" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "moldovancsaba.com",
+  "private": true,
+  "description": "The professional website of Moldován Csaba Zoltán and Moldován Csaba Kft.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "images": "node scripts/images.mjs"
+  }
+}

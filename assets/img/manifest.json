@@ -1,0 +1,223 @@
+{
+  "award-hrbest": {
+    "width": 1200,
+    "height": 800,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "award-hrbest-2": {
+    "width": 1200,
+    "height": 800,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "deal-1": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "deal-2": {
+    "width": 1200,
+    "height": 1599,
+    "widths": [
+      480,
+      750
+    ]
+  },
+  "deal-3": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "hu-taiwan": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      750
+    ]
+  },
+  "media-bizfest2": {
+    "width": 1200,
+    "height": 778,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-ceu": {
+    "width": 1200,
+    "height": 784,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-conf": {
+    "width": 1200,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-gitex": {
+    "width": 1200,
+    "height": 675,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-gitex-africa": {
+    "width": 1200,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-ibc": {
+    "width": 1200,
+    "height": 1009,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-idc": {
+    "width": 1200,
+    "height": 628,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-kutyukedd": {
+    "width": 1200,
+    "height": 675,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-sport-forum": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-studio": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-talkshow": {
+    "width": 1200,
+    "height": 801,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "media-zyntern": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "portrait": {
+    "width": 600,
+    "height": 600,
+    "widths": [
+      480,
+      600
+    ]
+  },
+  "stage-1": {
+    "width": 1200,
+    "height": 800,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "stage-2": {
+    "width": 1200,
+    "height": 798,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "taipei-1": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      750
+    ]
+  },
+  "taipei-2": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "taipei-3": {
+    "width": 1200,
+    "height": 900,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  },
+  "ua-blockchain": {
+    "width": 1200,
+    "height": 901,
+    "widths": [
+      480,
+      800,
+      1000
+    ]
+  }
+}
