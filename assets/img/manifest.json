@@ -17,6 +17,70 @@
       1000
     ]
   },
+  "csaba-1991": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-1994": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2000": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2002": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2004": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2006": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2026-casual": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
+  "csaba-2026-red": {
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      562
+    ]
+  },
   "deal-1": {
     "width": 1200,
     "height": 900,
@@ -159,12 +223,12 @@
       1000
     ]
   },
-  "portrait": {
-    "width": 600,
-    "height": 600,
+  "profile-2026": {
+    "width": 1008,
+    "height": 1260,
     "widths": [
       480,
-      600
+      800
     ]
   },
   "stage-1": {

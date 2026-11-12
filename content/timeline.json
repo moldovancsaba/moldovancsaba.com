@@ -7,9 +7,17 @@
     { "id": "all", "label": "All" },
     { "id": "career", "label": "Career" },
     { "id": "speaking", "label": "Speaking" },
+    { "id": "personal", "label": "Personal" },
     { "id": "award", "label": "Awards" }
   ],
   "items": [
+    {
+      "date": "2026",
+      "type": "personal",
+      "title": "Portrait · 2026",
+      "text": "A current portrait in the supplied year sequence.",
+      "photo": "csaba-2026-red"
+    },
     {
       "date": "2024 — Present",
       "type": "career",
@@ -141,10 +149,53 @@
       "text": "Following a stroke, left the media industry and shifted focus to supporting early-stage businesses and making seed investments."
     },
     {
+      "date": "2006",
+      "type": "personal",
+      "title": "Portrait · 2006",
+      "text": "Portrait representing this year in the supplied year sequence.",
+      "photo": "csaba-2006"
+    },
+    {
+      "date": "2004",
+      "type": "personal",
+      "title": "Portrait · 2004",
+      "text": "Portrait representing this year in the supplied year sequence.",
+      "photo": "csaba-2004"
+    },
+    {
+      "date": "2002",
+      "type": "personal",
+      "title": "Portrait · 2002",
+      "text": "Portrait representing this year in the supplied year sequence.",
+      "photo": "csaba-2002"
+    },
+    {
+      "date": "2000",
+      "type": "personal",
+      "title": "Portrait · 2000",
+      "text": "Portrait representing this year in the supplied year sequence.",
+      "photo": "csaba-2000"
+    },
+    {
       "date": "Early 2000s",
       "type": "career",
       "title": "Interactive television across nearly 70 countries",
       "text": "Helped bring premium-rate television quiz shows to more than 200 channels and established over 40 studios across multiple countries."
+    },
+    {
+      "date": "1994",
+      "type": "personal",
+      "title": "Basketball portrait · 1994 year reference",
+      "text": "Portrait labelled 1994 in the supplied year reference; the basketball chapter below covers 1990–1993.",
+      "photo": "csaba-1994"
+    },
+    {
+      "date": "1990 — 1993",
+      "type": "personal",
+      "title": "Basketball · Nagytétény SE & Kelenföld Vandals",
+      "org": "Streetball Collectiva",
+      "text": "Played basketball for Nagytétény SE and was part of the Streetball Collectiva team Kelenföld Vandals.",
+      "photo": "csaba-1991"
     },
     {
       "date": "Earlier",
