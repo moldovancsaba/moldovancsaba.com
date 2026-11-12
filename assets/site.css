@@ -222,14 +222,10 @@ font-size: 1.125rem; line-height: 1; cursor: pointer; transition: background 0.2
 .hero__portrait { position: relative; justify-self: end; width: 100%; }
 .hero__portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: 50% 0%; border-radius: var(--radius); background: var(--paper-2); }
 .hero__portrait figcaption { margin-top: 12px; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); text-align: right; }
-.stamp { position: absolute; left: -46px; bottom: 20px; width: clamp(96px, 11vw, 128px); height: auto; rotate: -12deg; }
+.stamp { position: absolute; left: -46px; bottom: 20px; width: clamp(96px, 11vw, 128px); height: auto; }
 .stamp__disc { fill: var(--accent); }
 .stamp__text { fill: var(--accent-ink); font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; letter-spacing: 0.04em; transform-box: view-box; transform-origin: 50% 50%; }
 .stamp__check { fill: none; stroke: var(--accent-ink); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
-@media (prefers-reduced-motion: no-preference) {
-.stamp__text { animation: spin 40s linear infinite; }
-}
-@keyframes spin { to { transform: rotate(360deg); } }
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(48px, 7vw, 88px); border-top: 1px solid var(--ink); }
 .stats li { display: flex; flex-direction: column; gap: 6px; padding: 22px 20px 26px 0; }
 .stats li + li { padding-left: 20px; border-left: 1px solid var(--line); }
