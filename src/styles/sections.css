@@ -135,7 +135,7 @@
 .tl__org { margin-top: 6px; font-size: 0.9375rem; font-weight: 500; }
 .tl__body p:last-child { margin-top: 10px; max-width: 62ch; font-size: 0.9875rem; color: var(--ink-2); }
 .tl__photo { grid-column: 3; align-self: start; overflow: hidden; border-radius: var(--radius); background: var(--paper); }
-.tl__photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 30%; transition: transform 0.5s var(--ease); }
+.tl__photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 0%; transition: transform 0.5s var(--ease); }
 .tl__photo:hover img { transform: scale(1.04); }
 
 /* Collapsed lists: extras are hidden only when JS can reveal them again. */
