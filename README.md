@@ -76,3 +76,5 @@ output is stale or a check does not pass.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+[Project board review and manual movement journal](docs/PROJECT_BOARD_MOVEMENT_LOG.md).
