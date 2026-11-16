@@ -161,12 +161,16 @@
 .map__swatch { width: 11px; height: 11px; border-radius: 50%; background: #16849a; }
 .map__swatch--startup { background: #ba6530; }
 .map__swatch--talk { background: #8059a6; }
+.map__swatch--workshop { background: #397a45; }
+.map__swatch--work { background: #b33c57; }
 .map__places { display: grid; gap: 8px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.8125rem; line-height: 1.6; color: var(--ink-2); }
 .map__places strong { color: var(--ink); }
 .map-pin { border: 0; background: transparent; }
 .map-pin span { display: block; width: 18px; height: 18px; border: 2px solid #fff; border-radius: 50%; background: #16849a; box-shadow: 0 1px 5px #0008; }
 .map-pin--startup span { background: #ba6530; }
 .map-pin--talk span { background: #8059a6; }
+.map-pin--workshop span { background: #397a45; }
+.map-pin--work span { background: #b33c57; }
 .map-pin--tv.map-pin--startup span { background: linear-gradient(135deg, #16849a 0 50%, #ba6530 50%); }
 .map-pin--tv.map-pin--talk span { background: linear-gradient(135deg, #16849a 0 50%, #8059a6 50%); }
 .map-pin--startup.map-pin--talk span { background: linear-gradient(135deg, #ba6530 0 50%, #8059a6 50%); }

@@ -81,6 +81,8 @@
       { id: "tv", label: "TV channels & studios" },
       { id: "startup", label: "Startup work" },
       { id: "talk", label: "Presentations" },
+      { id: "workshop", label: "Workshops" },
+      { id: "work", label: "Other work" },
     ];
     const map = L.map(mapElement, { scrollWheelZoom: false, worldCopyJump: true }).setView([28, 14], 2);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
